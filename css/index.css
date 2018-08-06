@@ -251,21 +251,23 @@ body {
   position: relative;
   overflow: hidden;
 }
-#gx4dl-footer {
+#audacity-art {
+  width: 18vw;
   position: absolute;
-  color: #242425;
-  font-family: X4D-900;
-  font-size: 3.5vw;
-  left: 1vw;
-  top: 1vw;
+  left: 0.75vw;
+  top: 0.25vw;
+  transition: all 0.2s ease-in-out;
 }
-#footer-copyright {
+#audacity-art:hover {
+  transform: scale(1.025);
+}
+#boosted-tracks {
+  font-family: X4D-400;
+  font-size: 1.75vw;
+  color: #cccccc;
   position: absolute;
-  color: #242425;
-  font-family: X4D-900;
-  font-size: 1.84vw;
-  left: 1vw;
-  bottom: 0.75vw;
+  bottom: 0.5vw;
+  left: 8.5vw;
 }
 #copyright-symbol {
   font-size: 2.75vw;
