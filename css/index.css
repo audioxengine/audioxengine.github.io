@@ -223,12 +223,11 @@ body {
   background: #242425;
   height: 8vw;
 }
-#lfooter-cogs {
-  color: #040404;
-  font-size: 5.5vw;
+#lfooter-logo-alt {
+  width: 5vw;
   position: absolute;
-  right: 0.5vw;
-  top: 1.5vw;
+  left: 1.5vw;
+  top: 1.4vw;
 }
 .center-footer {
   display: flex;
