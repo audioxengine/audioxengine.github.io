@@ -38,18 +38,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.axe-about:before {
+.axe-emblem:before {
   content: "\e000";
 }
-.axe-archive:before {
+.axe-tracks:before {
   content: "\e001";
 }
-.axe-headphones:before {
+.axe-shuffle:before {
   content: "\e002";
 }
-.axe-emblem:before {
+.axe-archive:before {
   content: "\e003";
 }
-.axe-shuffle:before {
+.axe-about:before {
   content: "\e004";
 }
