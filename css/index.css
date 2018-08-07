@@ -252,10 +252,10 @@ body {
   overflow: hidden;
 }
 #audacity-art {
-  width: 18vw;
+  width: 16vw;
   position: absolute;
   left: 0.75vw;
-  top: 0.25vw;
+  top: 2.25vw;
   transition: all 0.2s ease-in-out;
 }
 #audacity-art:hover {
@@ -264,10 +264,10 @@ body {
 #boosted-tracks {
   font-family: X4D-400;
   font-size: 1.75vw;
-  color: #cccccc;
+  color: #eeeeee;
   position: absolute;
   bottom: 0.5vw;
-  left: 8.5vw;
+  left: 6.5vw;
 }
 #copyright-symbol {
   font-size: 2.75vw;
@@ -285,7 +285,7 @@ body {
   font-size: 1.25vw;
   color: #dddddd;
   text-decoration: none;
-  right: 16.25vw;
+  right: 19.25vw;
   transition: all 0.2s ease-in-out;
 }
 .footer-links:hover {
