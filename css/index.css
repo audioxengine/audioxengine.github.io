@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: X4D-400;
+  font-family: TBR-700;
 }
 
 .header-container {
@@ -48,7 +48,7 @@ body {
 #search-box input[type="text"] {
   width: 72%;
   padding: 0.5vw;
-  font-family: X4D-400;
+  font-weight: 700;
   font-size: 1.5vw;
   outline: none;
   border: 1px solid #101010;
@@ -338,7 +338,8 @@ body {
   position: relative;
 }
 #created-with {
-  font-family: X4D-400;
+  font-family: TBR;
+  font-weight: 700;
   font-size: 1.75vw;
   color: #eeeeee;
   position: absolute;
@@ -373,7 +374,7 @@ body {
 #hosted-on {
   position: absolute;
   color: #000000;
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 2vw;
   left: 0.5vw;
   top: 0.9vw;
