@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: TBR-700;
+  font-family: X4D-400;
 }
 
 .header-container {
@@ -83,7 +83,7 @@ body {
 #version-id {
   padding: 0.25vw 0;
   color: #fefefe;
-  font-family: X4D-900;
+  font-family: X4D-700;
   font-size: 1.75vw;
   position: relative;
   -webkit-user-select: none;
@@ -338,8 +338,7 @@ body {
   position: relative;
 }
 #created-with {
-  font-family: TBR;
-  font-weight: 700;
+  font-family: X4D-700;
   font-size: 1.75vw;
   color: #eeeeee;
   position: absolute;
@@ -374,7 +373,7 @@ body {
 #hosted-on {
   position: absolute;
   color: #000000;
-  font-family: TBR-700;
+  font-family: X4D-700;
   font-size: 2vw;
   left: 0.5vw;
   top: 0.9vw;
