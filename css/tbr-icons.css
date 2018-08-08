@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "axe-icons";
-  src:url("../assets/fonts/axe-icons/axe-icons.eot");
-  src:url("../assets/fonts/axe-icons/axe-icons.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/axe-icons/axe-icons.woff") format("woff"),
-    url("../assets/fonts/axe-icons/axe-icons.ttf") format("truetype"),
-    url("../assets/fonts/axe-icons/axe-icons.svg#axe-icons") format("svg");
+  font-family: "tbr-icons";
+  src:url("../assets/fonts/tbr-icons/tbr-icons.eot");
+  src:url("../assets/fonts/tbr-icons/tbr-icons.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/tbr-icons/tbr-icons.woff") format("woff"),
+    url("../assets/fonts/tbr-icons/tbr-icons.ttf") format("truetype"),
+    url("../assets/fonts/tbr-icons/tbr-icons.svg#tbr-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 
 }
 
 [data-icon]:before {
-  font-family: "axe-icons" !important;
+  font-family: "tbr-icons" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -25,9 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="axe-"]:before,
-[class*=" axe-"]:before {
-  font-family: "axe-icons" !important;
+[class^="tbr-"]:before,
+[class*=" tbr-"]:before {
+  font-family: "tbr-icons" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -38,18 +38,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.axe-emblem:before {
+.tbr-logo:before {
   content: "\e000";
 }
-.axe-tracks:before {
+.tbr-emblem:before {
   content: "\e001";
 }
-.axe-shuffle:before {
+.tbr-tracks:before {
   content: "\e002";
 }
-.axe-archive:before {
+.tbr-shuffle:before {
   content: "\e003";
 }
-.axe-about:before {
+.tbr-archive:before {
   content: "\e004";
+}
+.tbr-about:before {
+  content: "\e005";
 }
