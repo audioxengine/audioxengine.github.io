@@ -12,18 +12,28 @@ body {
   background: #fefefe;
 }
 #header-logo {
-  font-family: X4D-900;
-  color: #101010;
-  font-size: 5.25vw;
-  text-decoration: none;
-  padding: 0.5vw;
   outline: none;
-  line-height: 4vw;
   margin-left: 1.75vw;
   -webkit-user-select: none;
 }
-#GearX {
-  color: #5a5a5b;
+#tbr-header {
+  width: 40vw;
+}
+@-webkit-keyframes pulse {
+  100% {-webkit-transform: scale(1.01);transform: scale(1.01);}
+  100% {-webkit-transform: scale(0.99);transform: scale(0.99);}}
+@keyframes pulse {
+  100% {-webkit-transform: scale(1.01);-ms-transform: scale(1.01);transform: scale(1.01);}
+  100% {-webkit-transform: scale(0.99);-ms-transform: scale(0.99);transform: scale(0.99);}}
+#tbr-header:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 #rightheader-box {
   width: 24vw;
