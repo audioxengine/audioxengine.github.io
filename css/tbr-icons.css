@@ -1,15 +1,86 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "tbr-icons";
-  src:url("../assets/fonts/tbr-icons/tbr-icons.eot");
-  src:url("../assets/fonts/tbr-icons/tbr-icons.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/tbr-icons/tbr-icons.woff") format("woff"),
-    url("../assets/fonts/tbr-icons/tbr-icons.ttf") format("truetype"),
-    url("../assets/fonts/tbr-icons/tbr-icons.svg#tbr-icons") format("svg");
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-100.eot");
+  src: url("../assets/fonts/tbr-100.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-100.woff2") format("woff2"),
+      url("../assets/fonts/tbr-100.woff") format("woff"),
+      url("../assets/fonts/tbr-100.ttf") format("truetype"),
+      url("../assets/fonts/tbr-100.svg#tbr-100") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-900.eot");
+  src: url("../assets/fonts/tbr-900.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-900.woff2") format("woff2"),
+      url("../assets/fonts/tbr-900.woff") format("woff"),
+      url("../assets/fonts/tbr-900.ttf") format("truetype"),
+      url("../assets/fonts/tbr-900.svg#tbr-900") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-800.eot");
+  src: url("../assets/fonts/tbr-800.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-800.woff2") format("woff2"),
+      url("../assets/fonts/tbr-800.woff") format("woff"),
+      url("../assets/fonts/tbr-800.ttf") format("truetype"),
+      url("../assets/fonts/tbr-800.svg#tbr-800") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-700.eot");
+  src: url("../assets/fonts/tbr-700.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-700.woff2") format("woff2"),
+      url("../assets/fonts/tbr-700.woff") format("woff"),
+      url("../assets/fonts/tbr-700.ttf") format("truetype"),
+      url("../assets/fonts/tbr-700.svg#tbr-700") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-300.eot");
+  src: url("../assets/fonts/tbr-300.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-300.woff2") format("woff2"),
+      url("../assets/fonts/tbr-300.woff") format("woff"),
+      url("../assets/fonts/tbr-300.ttf") format("truetype"),
+      url("../assets/fonts/tbr-8300.svg#tbr-300") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR";
+  src: url("../assets/fonts/tbr-400.eot");
+  src: url("../assets/fonts/tbr-400.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-400.woff2") format("woff2"),
+      url("../assets/fonts/tbr-400.woff") format("woff"),
+      url("../assets/fonts/tbr-400.ttf") format("truetype"),
+      url("../assets/fonts/tbr-400.svg#tbr-400") format("svg");
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: "tbr-icons";
+  src:url("../assets/fonts/tbr-icons.eot");
+  src:url("../assets/fonts/tbr-icons.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/tbr-icons.woff") format("woff"),
+    url("../assets/fonts/tbr-icons.ttf") format("truetype"),
+    url("../assets/fonts/tbr-icons.svg#tbr-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 [data-icon]:before {
