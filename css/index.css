@@ -317,23 +317,6 @@ body {
 #footer-contribute {
   top: 4.5vw;
 }
-#footer-license {
-  font-size: 1.1vw;
-  position: absolute;
-  line-height: 0.5vw;
-  color: #444444;
-  top: 0.25vw;
-  left: 9vw;
-}
-#footer-license .footer-mit {
-  font-family: TBR-900;
-  line-height: 1vw;
-  bottom: -0.75vw;
-  right: 6.57vw;
-  color: #444444;
-  font-size: 1.1vw;
-  text-decoration: none;
-}
 #cfbot-right {
   position: relative;
 }
