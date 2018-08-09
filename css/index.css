@@ -301,7 +301,7 @@ body {
   font-size: 1.25vw;
   color: #dddddd;
   text-decoration: none;
-  right: 19.25vw;
+  right: 20.25vw;
   transition: all 0.2s ease-in-out;
 }
 .footer-links:hover {
@@ -316,6 +316,21 @@ body {
 }
 #footer-contribute {
   top: 4.5vw;
+}
+#tbr-footer {
+  position: absolute;
+  width: 16vw;
+  opacity: 0.75;
+  top: 1vw;
+  left: 6vw;
+}
+#footer-copyright {
+  font-family: TBR-900;
+  position: absolute;
+  color: #777777;
+  font-size: 1vw;
+  top: 4vw;
+  left: 6vw;
 }
 #cfbot-right {
   position: relative;
