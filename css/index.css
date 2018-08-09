@@ -1,20 +1,20 @@
 body {
-  margin: 0 auto;
   font-family: TBR-400;
+  margin: 0 auto;
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   align-items: center;
-  width: 100%;
   background: #fefefe;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 #header-logo {
-  outline: none;
   margin-left: 1.75vw;
-  -webkit-user-select: none;
+  outline: none;
+  user-select: none;
 }
 #tbr-header {
   width: 40vw;
@@ -36,55 +36,55 @@ body {
   animation-iteration-count: infinite;
 }
 #rightheader-box {
-  width: 24vw;
   margin: 1vw 1.75vw;
+  width: 24vw;
 }
 #search-box {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 #search-box input[type="text"] {
-  width: 72%;
-  padding: 0.5vw;
+  background: #fefefe;
+  border: 0.1vw solid #101010;
   font-family: TBR-400;
   font-size: 1.5vw;
   outline: none;
-  border: 0.1vw solid #101010;
-  background: #fefefe;
+  padding: 0.5vw;
+  width: 72%;
 }
 #search-box input::-webkit-input-placeholder {
   color: #5a5a5b;
   opacity: 1;
 }
 #search-box button[type="submit"] {
-  width: 5vw;
-  font-size: 1.5vw;
-  color: #fefefe;
   background: #5a5a5b;
   border: 0.25vw solid #5a5a5b;
   border-radius: 0.25vw;
+  color: #fefefe;
   cursor: pointer;
+  font-size: 1.5vw;
   outline: none;
+  width: 5vw;
 }
 #search-box button[type="submit"]:active {
   transform: translateY(2px);
 }
 #version-box {
-  margin: 0.5vw 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background: #101010;
   border-radius: 0.25vw;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0.5vw 0;
 }
 #version-id {
-  padding: 0.25vw 0;
   color: #fefefe;
   font-family: TBR-700;
   font-size: 1.75vw;
+  padding: 0.25vw 0;
   position: relative;
   -webkit-user-select: none;
 }
@@ -92,36 +92,36 @@ body {
   transform: translateY(2px);
 }
 #version-info {
-  font-family: TBR-400;
-  visibility: hidden;
-  width: 24vw;
-  font-size: 1.1vw;
   background-color: #111;
-  color: #fefefe;
-  text-align: center;
   border-radius: 0.25vw;
+  color: #fefefe;
+  cursor: context-menu;
+  font-family: TBR-400;
+  font-size: 1.1vw;
   padding: 0.5vw;
   position: absolute;
-  z-index: 1;
-  top: 120%;
   right: -15%;
-  cursor: context-menu;
+  text-align: center;
+  top: 120%;
+  visibility: hidden;
+  width: 24vw;
+  z-index: 1;
 }
 #version-info::after {
-  content: "";
-  position: absolute;
+  border-color: transparent transparent #111 transparent;
+  border-style: solid;
+  border-width: 0.25vw;
   bottom: 100%;
+  content: "";
   left: 50%;
   margin-left: -0.25vw;
-  border-width: 0.25vw;
-  border-style: solid;
-  border-color: transparent transparent #111 transparent;
+  position: absolute;
 }
 .header-base {
   background: Black;
   height: 0.75vw;
-  width: 100%;
   position: relative;
+  width: 100%;
   z-index: -1;
 }
 .footer-base {
@@ -131,97 +131,97 @@ body {
   z-index: -1;
 }
 .cc-container {
-  position: fixed;
-  height: 3.25vw;
-  width: 100%;
+  align-items: center;
+  background: #fefefe;
+  border-top: 0.75vw solid #101010;
   bottom: 0;
   display: flex;
   flex-direction: row;
+  height: 3.25vw;
   justify-content: space-between;
-  align-items: center;
-  background: #fefefe;
   padding: 0.25vw 0;
-  border-top: 0.75vw solid #101010;
+  position: fixed;
+  width: 100%;
 }
 #cc-policy {
+  color: #101010;
   font-family: TBR-700;
   font-size: 1.3vw;
-  color: #101010;
   margin: 0 2vw;
 }
 #cc-close {
+  background: #101010;
+  border-radius: 0.25vw;
+  color: #fefefe;
+  cursor: pointer;
   font-family: TBR-700;
   font-size: 1.25vw;
   margin: 0 0.5vw;
   padding: 0.75vw;
-  color: #fefefe;
-  background: #101010;
-  border-radius: 0.25vw;
-  cursor: pointer;
 }
 #cc-close:active {
   transform: translateY(2px);
 }
 .main-container {
-  overflow: hidden;
+  align-items: stretch;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  width: 100%;
   height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 #left-container {
   background: #000000;
   width: 8vw;
 }
 #sidenav-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: flex-start;
   padding: 0.5vw 0;
 }
 .sidenav-menu {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
   margin: 0.5vw 0;
   padding: 1vw;
-  height: 100%;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .sidenav-label {
-  font-family: TBR-700;
-  font-size: 1vw;
   align-self: center;
   color: #444444;
+  font-family: TBR-700;
+  font-size: 1vw;
 }
 .sidenav-icons {
   font-size: 3vw;
-  margin: 0.25vw auto;
   color: #444444;
+  margin: 0.25vw auto;
 }
 #center-container {
-  overflow: hidden;
   background: #242425;
+  overflow: hidden;
   width: 66vw;
 }
 #right-container {
-  overflow: hidden;
   background: #5a5a5b;
+  overflow: hidden;
   width: 26vw;
 }
 .footer-container {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
   width: 100%;
 }
 .left-footer {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   width: 8vw;
 }
 #left-footer-top {
@@ -229,15 +229,15 @@ body {
   height: 8vw;
 }
 #left-footer-bot {
-  position: relative;
   background: #242425;
   height: 8vw;
+  position: relative;
 }
 #lfooter-logo {
-  font-size: 5vw;
   color: #000000;
-  position: absolute;
+  font-size: 5vw;
   left: 1.5vw;
+  position: absolute;
   top: 1.5vw;
   transition: all 0.2s ease-in-out;
 }
@@ -246,62 +246,62 @@ body {
   transform: scale(1.025);
 }
 .center-footer {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   width: 66vw;
 }
 #cfooter-toplayer {
-  height: 8vw;
   background: #363636;
+  height: 8vw;
 }
 #cfooter-botlayer {
-  height: 8vw;
   background: #040404;
+  height: 8vw;
 }
 .cfooterbot-container {
   display: flex;
   flex-direction: row;
 }
 #cfbot-left {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 #audacity-art {
-  width: 16vw;
-  position: absolute;
   left: 0.75vw;
+  position: absolute;
   top: 2.25vw;
   transition: all 0.2s ease-in-out;
+  width: 16vw;
 }
 #audacity-art:hover {
   transform: scale(1.025);
 }
 #boosted-tracks {
+  bottom: 0.5vw;
+  color: #eeeeee;
   font-family: TBR-400;
   font-size: 1.75vw;
-  color: #eeeeee;
-  position: absolute;
-  bottom: 0.5vw;
   left: 6.5vw;
+  position: absolute;
 }
 #copyright-symbol {
   font-size: 2.75vw;
-  position: absolute;
   left: 4.1vw;
+  position: absolute;
   top: -0.25vw;
 }
 #cfbot-center {
-  position: relative;
   margin: 1vw 1vw 1vw 2vw;
+  position: relative;
 }
 .footer-links {
-  position: absolute;
+  color: #dddddd;
   font-family: TBR-700;
   font-size: 1.25vw;
-  color: #dddddd;
-  text-decoration: none;
+  position: absolute;
   right: 20.25vw;
+  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 .footer-links:hover {
@@ -318,70 +318,70 @@ body {
   top: 4.5vw;
 }
 #tbr-footer {
-  position: absolute;
-  width: 16vw;
-  opacity: 0.75;
-  top: 1vw;
   left: 6vw;
+  opacity: 0.75;
+  position: absolute;
+  top: 1vw;
+  width: 16vw;
 }
 #footer-copyright {
-  font-family: TBR-900;
-  position: absolute;
   color: #777777;
+  font-family: TBR-900;
   font-size: 1vw;
-  top: 4vw;
   left: 6vw;
+  position: absolute;
+  top: 4vw;
 }
 #cfbot-right {
   position: relative;
 }
 #created-with {
+  color: #eeeeee;
   font-family: TBR-700;
   font-size: 1.75vw;
-  color: #eeeeee;
   position: absolute;
-  top: 2vw;
   right: 0.75vw;
+  top: 2vw;
 }
 #vscode-logo {
-  width: 16vw;
+  bottom: 1vw;
   position: absolute;
   right: 0.75vw;
-  bottom: 1vw;
   transition: all 0.2s ease-in-out;
+  width: 16vw;
 }
 #vscode-logo:hover {
   transform: scale(1.025);
 }
 .right-footer {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   width: 26vw;
 }
 #right-footer-top {
-  height: 8vw;
   background: #a8a8a8;
+  height: 8vw;
 }
 #right-footer-bot {
-  height: 8vw;
   background: #505050;
+  height: 8vw;
   position: relative;
 }
 #hosted-on {
-  position: absolute;
   color: #000000;
   font-family: TBR-700;
   font-size: 2vw;
   left: 0.5vw;
+  position: absolute;
   top: 0.9vw;
 }
 #github-logo {
-  width: 16vw;
-  position: absolute;
-  left: 0.5vw;
   bottom: 0.9vw;
+  left: 0.5vw;
+  position: absolute;
   transition: all 0.2s ease-in-out;
+  width: 16vw;
 }
 #github-logo:hover {
   transform: scale(1.025);
