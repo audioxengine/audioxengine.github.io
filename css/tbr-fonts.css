@@ -37,21 +37,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.tbr-logo:before {
+.tbr-emblem:before {
   content: "\e000";
 }
-.tbr-emblem:before {
+.tbr-tracks:before {
   content: "\e001";
 }
-.tbr-tracks:before {
+.tbr-random:before {
   content: "\e002";
 }
-.tbr-shuffle:before {
+.tbr-archive:before {
   content: "\e003";
 }
-.tbr-archive:before {
+.tbr-about:before {
   content: "\e004";
 }
-.tbr-about:before {
-  content: "\e005";
+
+@font-face {
+  font-family: "TBR-400";
+  src: url("../assets/fonts/tbr-400.eot");
+  src: url("../assets/fonts/tbr-400.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-400.woff2") format("woff2"),
+      url("../assets/fonts/tbr-400.woff") format("woff"),
+      url("../assets/fonts/tbr-400.ttf") format("truetype"),
+      url("../assets/fonts/tbr-400.svg#tbr-400") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "TBR-700";
+  src: url("../assets/fonts/tbr-700.eot");
+  src: url("../assets/fonts/tbr-700.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-700.woff2") format("woff2"),
+      url("../assets/fonts/tbr-700.woff") format("woff"),
+      url("../assets/fonts/tbr-700.ttf") format("truetype"),
+      url("../assets/fonts/tbr-700.svg#tbr-700") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBR-900";
+  src: url("../assets/fonts/tbr-900.eot");
+  src: url("../assets/fonts/tbr-900.eot?#iefix") format("embedded-opentype"),
+      url("../assets/fonts/tbr-900.woff2") format("woff2"),
+      url("../assets/fonts/tbr-900.woff") format("woff"),
+      url("../assets/fonts/tbr-900.ttf") format("truetype"),
+      url("../assets/fonts/tbr-900.svg#tbr-900") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+

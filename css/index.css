@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: X4D-400;
+  font-family: TBR-400;
 }
 
 .header-container {
@@ -48,7 +48,7 @@ body {
 #search-box input[type="text"] {
   width: 72%;
   padding: 0.5vw;
-  font-weight: 700;
+  font-family: TBR-400;
   font-size: 1.5vw;
   outline: none;
   border: 1px solid #101010;
@@ -83,7 +83,7 @@ body {
 #version-id {
   padding: 0.25vw 0;
   color: #fefefe;
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1.75vw;
   position: relative;
   -webkit-user-select: none;
@@ -92,7 +92,7 @@ body {
   transform: translateY(2px);
 }
 #version-info {
-  font-family: X4D-400;
+  font-family: TBR-400;
   visibility: hidden;
   width: 24vw;
   font-size: 1.1vw;
@@ -144,13 +144,13 @@ body {
   border-top: 0.75vw solid #101010;
 }
 #cc-policy {
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1.3vw;
   color: #101010;
   margin: 0 2vw;
 }
 #cc-close {
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1.25vw;
   margin: 0 0.5vw;
   padding: 0.75vw;
@@ -192,7 +192,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .sidenav-label {
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1vw;
   align-self: center;
   color: #444444;
@@ -278,7 +278,7 @@ body {
   transform: scale(1.025);
 }
 #boosted-tracks {
-  font-family: X4D-400;
+  font-family: TBR-400;
   font-size: 1.75vw;
   color: #eeeeee;
   position: absolute;
@@ -297,7 +297,7 @@ body {
 }
 .footer-links {
   position: absolute;
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1.25vw;
   color: #dddddd;
   text-decoration: none;
@@ -326,7 +326,7 @@ body {
   left: 9vw;
 }
 #footer-license .footer-mit {
-  font-family: X4D-900;
+  font-family: TBR-900;
   line-height: 1vw;
   bottom: -0.75vw;
   right: 6.57vw;
@@ -338,7 +338,7 @@ body {
   position: relative;
 }
 #created-with {
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 1.75vw;
   color: #eeeeee;
   position: absolute;
@@ -373,7 +373,7 @@ body {
 #hosted-on {
   position: absolute;
   color: #000000;
-  font-family: X4D-700;
+  font-family: TBR-700;
   font-size: 2vw;
   left: 0.5vw;
   top: 0.9vw;
