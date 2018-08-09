@@ -2,7 +2,6 @@ body {
   font-family: TBR-400;
   margin: 0 auto;
 }
-
 .header-container {
   align-items: center;
   background: #fefefe;
@@ -19,12 +18,6 @@ body {
 #tbr-header {
   width: 40vw;
 }
-@-webkit-keyframes pulse {
-  100% {-webkit-transform: scale(1.01);transform: scale(1.01);}
-  100% {-webkit-transform: scale(0.99);transform: scale(0.99);}}
-@keyframes pulse {
-  100% {-webkit-transform: scale(1.01);-ms-transform: scale(1.01);transform: scale(1.01);}
-  100% {-webkit-transform: scale(0.99);-ms-transform: scale(0.99);transform: scale(0.99);}}
 #tbr-header:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -356,6 +349,7 @@ body {
   opacity: 0.75;
   position: absolute;
   top: 1vw;
+  transition: all 0.2s ease-in-out;
   width: 16vw;
 }
 #footer-copyright {
@@ -365,6 +359,10 @@ body {
   left: 6vw;
   position: absolute;
   top: 4vw;
+  transition: all 0.2s ease-in-out;
+}
+#cfbot-center:hover #tbr-footer {
+  transform: scale(1.025);
 }
 #cfbot-right {
   position: relative;
@@ -420,3 +418,9 @@ body {
 #github-logo:hover {
   transform: scale(1.025);
 }
+@-webkit-keyframes pulse {
+  100% {-webkit-transform: scale(1.01);transform: scale(1.01);}
+  100% {-webkit-transform: scale(0.99);transform: scale(0.99);}}
+@keyframes pulse {
+  100% {-webkit-transform: scale(1.01);-ms-transform: scale(1.01);transform: scale(1.01);}
+  100% {-webkit-transform: scale(0.99);-ms-transform: scale(0.99);transform: scale(0.99);}}
