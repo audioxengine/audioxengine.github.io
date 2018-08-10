@@ -87,7 +87,77 @@ padding: 0.75vw;
     flex-direction: row;
 }
 #lq-container {
-    background: white;
-    height: 25vw;
-    width: 20vw;
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15vw;
+    position: relative;
+    padding-bottom: 0.25vw;
+}
+#fetch-info {
+    position: absolute;
+    font-size: 0.75vw;
+    text-align: center;
+    background: #eeeeee;
+    padding: 0.25vw;
+    width: 13vw;
+    opacity: 0.5;
+    border-radius: 0 0 0.25vw 0;
+    z-index: 1;
+}
+#lq-cover {
+    height: 15vw;
+    text-align: center;
+}
+#lq-cover-icon {
+    color: #333333;
+    font-size: 10vw;
+    line-height: 15vw;
+}
+#lq-track-title {
+    color: #cccccc;
+    text-align: center;
+    font-size: 1vw;
+}
+#lq-player {
+    margin-top: 2.5vw;
+    width: 100%;
+}
+#hq-container {
+    display: flex;
+    flex-direction: column;
+    background: #111111;
+    margin-left: 1vw;
+    width: 42vw;
+}
+#hq-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#album-art {
+    margin: 1vw 1.5vw 1vw 1vw;
+    width: 18vw;
+    height: 18vw;
+}
+#hq-track-info-holder {
+    display: flex;
+    flex-direction: column;
+}
+#hq-track-single {
+    color: #aaaaaa;
+    font-family: TBR-400;
+    margin: 1vw 0 0;
+    font-size: 0.75vw;
+}
+#hq-track-title {
+    color: #eeeeee;
+    font-family: TBR-700;
+    font-size: 3vw;
+}
+#hq-track-artist {
+    color: #cccccc;
+    font-family: TBR-400;
+    font-size: 1.5vw;
 }
