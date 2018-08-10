@@ -15,3 +15,15 @@ function versionVsbltyH() {
     x.style.visibility = "";
   }
 }
+//JS for Play/Pause Button
+function togglePlayPause() {
+  var song = document.getElementById("lq-track");
+  {
+    song.paused? song.play() : song.pause();
+  }
+}
+$(function () {
+  $("#play-pause-button").click(function () {
+      $("#track-button").toggleClass("fa-play fa-pause");
+  });
+});
