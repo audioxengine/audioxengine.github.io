@@ -152,13 +152,13 @@ padding: 0.75vw;
 }
 #album-art {
     margin: 0 1vw 1vw 0;
-    width: 100%;
-    height: 100%;
+    height: 15vw;
 }
 #hq-track-info-holder {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
 }
 #hq-track-single {
     color: #aaaaaa;
@@ -176,8 +176,52 @@ padding: 0.75vw;
     font-family: TBR-400;
     font-size: 1.5vw;
 }
+#hq-info-divider {
+    background: #777777;
+    width: 100%;
+    height: 0.10vw;
+    margin: 1vw 0;
+}
+#hq-play-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    left: 0.5vw;
+    bottom: 2vw;
+    width: 10vw;
+    height: 3vw;
+    border: 0.1vw solid #999999;
+    border-radius: 3vw;
+    background: #999999;
+    position: absolute;
+    cursor: pointer;
+}
+#hq-play-button span {
+    font-family: TBR-700;
+    font-size: 1.25vw;
+    color: #2222222;
+}
+#hq-download-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    right: 0.5vw;
+    bottom: 2vw;
+    width: 12vw;
+    height: 3vw;
+    border: 0.1vw solid #999999;
+    border-radius: 3vw;
+    position: absolute;
+}
+#hq-download-button span {
+    color: #999999;
+    font-family: TBR-700;
+    font-size: 1vw;
+}
 #audio-player-progress-container {
-    margin: 0 auto;
+    margin: 1vw auto 0;
     height: 0.5vw;
     width: 40vw;
     background: #3a3939;

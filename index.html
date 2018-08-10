@@ -81,13 +81,13 @@
           <span id="fetch-info">Track Fetched @ 128kbps</span>
           <div id="lq-cover"><i class="fas fa-dot-circle" id="lq-cover-icon"></i></div>
           <span id="lq-track-title">YoutubetoMp3_Download.mp3</span>
+          <div id="play-pause-button" onclick="togglePlayPause()">
+              <i id="track-button" class="fas fa-play"></i>
+            </div>
           <audio id="lq-track">
             <source src="media/ImagineDragons-Believer(LQ).mp3" type="audio/mpeg">
             <source src="media/ImagineDragons-Believer(LQ).ogg" type="audio/ogg">
           </audio>
-          <div id="play-pause-button" onclick="togglePlayPause()">
-            <i id="track-button" class="fas fa-play"></i>
-          </div>
         </div>
         <div id="hq-container">
           <div id="hq-player">
@@ -96,6 +96,17 @@
               <span id="hq-track-single">S I N G L E</span>
               <span id="hq-track-title">Believer</span>
               <span id="hq-track-artist">Imagine Dragons</span>
+              <span id="hq-info-divider"></span>
+              <div id="hq-play-button">
+                <span>
+                    <i class="fas fa-play" style="font-size:75%"></i>&nbsp;&nbsp;P&nbsp;L&nbsp;A&nbsp;Y
+                </span>
+              </div>
+              <div id="hq-download-button">
+                  <span>
+                      D&nbsp;O&nbsp;W&nbsp;N&nbsp;L&nbsp;O&nbsp;A&nbsp;D&nbsp;&nbsp;<i class="fas fa-cloud-download-alt" style="font-size:75%"></i>
+                  </span>
+              </div>
             </div>
           </div>
           <div id="audio-player-progress-container">
