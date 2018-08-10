@@ -1,0 +1,93 @@
+.cc-container {
+    -webkit-box-align: center;
+  -webkit-align-items: center;
+       -moz-box-align: center;
+       -ms-flex-align: center;
+align-items: center;
+background: #fefefe;
+border-top: 0.75vw solid #101010;
+bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+height: 3.25vw;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.25vw 0;
+    position: fixed;
+    width: 100%;
+}
+#cc-policy {
+color: #101010;
+font-family: TBR-700;
+font-size: 1.3vw;
+margin: 0 2vw;
+}
+#cc-close {
+background: #101010;
+    -webkit-border-radius: 0.25vw;
+       -moz-border-radius: 0.25vw;
+            border-radius: 0.25vw;
+color: #fefefe;
+cursor: pointer;
+font-family: TBR-700;
+font-size: 1.25vw;
+margin: 0 0.5vw;
+padding: 0.75vw;
+}
+#cc-close:active {
+    -webkit-transform: translateY(2px);
+       -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+         -o-transform: translateY(2px);
+            transform: translateY(2px);
+}
+#center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#track-otw-container {
+    background: #3a3939;
+    margin: 1vw 2vw 4vw;
+    padding: 2vw;
+    overflow: hidden;
+    user-select: none;
+    cursor: context-menu;
+}
+#totw-label {
+    color: #ffffff;
+    font-family: TBR-900;
+    font-size: 3vw;
+    
+}
+#time-info {
+    color: #cccccc;
+    font-family: TBR-400;
+    width: 100%;
+    margin: 1vw -2vw;
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
+    background: #302f2f;
+}
+#tracks-container {
+    display: flex;
+    flex-direction: row;
+}
+#lq-container {
+    background: white;
+    height: 25vw;
+    width: 20vw;
+}
