@@ -187,11 +187,11 @@ padding: 0.75vw;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    left: 0.5vw;
+    left: 0vw;
     bottom: 2vw;
     width: 10vw;
     height: 3vw;
-    border: 0.1vw solid #999999;
+    border: 0.25vw solid #999999;
     border-radius: 3vw;
     background: #999999;
     position: absolute;
@@ -200,23 +200,23 @@ padding: 0.75vw;
 #hq-play-button span {
     font-family: TBR-700;
     font-size: 1.25vw;
-    color: #222222;
+    color: #ffffff;
 }
 #hq-download-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    right: 0.5vw;
+    right: 0vw;
     bottom: 2vw;
     width: 12vw;
     height: 3vw;
-    border: 0.1vw solid #999999;
-    border-radius: 3vw;
+    border: 0.25vw solid #999999;
+    border-radius: 0.25vw;
     position: absolute;
 }
 #hq-download-button span {
-    color: #999999;
+    color: #ffffff;
     font-family: TBR-700;
     font-size: 1vw;
 }
