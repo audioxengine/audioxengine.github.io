@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="home/home.css">
   <link rel="stylesheet" href="css/tbr-fonts.css">
   <link rel="stylesheet" href="css/fa5.css">
+
   <link rel='shortcut icon' type='image/png' href='favicon.png' />
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/index.js"></script>
 
@@ -73,17 +75,18 @@
     </div>
     <div id="center-container">
     <!-- === === === === === === === === TRACKBOOSTR === === === === === === === === -->
-    <div id="track-otw-container">
-      <div id="totw-label">BoostD Track of the Week:</div>
-      <div id="time-info"><i class="far fa-calendar-check" style="margin-right:1vw"></i>For the <b>1st Week of August 2018</b></div>
+    <div id="track-otm-container">
+      <div id="totm-label">BoostD Track of the Month! –</div>
+      <div id="time-info"><i class="far fa-calendar-check" style="margin-right:1vw"></i>For the Month of <b>August 2018</b></div>
       <div id="tracks-container">
         <div id="lq-container">
           <span id="fetch-info">Track Fetched @ 128kbps</span>
           <div id="lq-cover"><i class="fas fa-dot-circle" id="lq-cover-icon"></i></div>
           <span id="lq-track-title">YoutubetoMp3_Download.mp3</span>
-          <div id="play-pause-button" onclick="togglePlayPause()">
-              <i id="track-button" class="fas fa-play"></i>
-            </div>
+          <div id="play-pause-button" onclick="togglePlayPause();toggleFilter()">
+              <span class="track-button"><i class="fas fa-play"></i></span>
+              <span class="track-button"  style="display:none"><i class="fas fa-pause"></i></span>
+          </div>
           <audio id="lq-track">
             <source src="media/ImagineDragons-Believer(LQ).mp3" type="audio/mpeg">
             <source src="media/ImagineDragons-Believer(LQ).ogg" type="audio/ogg">
@@ -188,7 +191,7 @@ player.addEventListener("timeupdate", function() {
     </script>
 
     <script>
-    
+
     </script>
 
 </html>

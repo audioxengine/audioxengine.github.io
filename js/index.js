@@ -15,15 +15,25 @@ function versionVsbltyH() {
     x.style.visibility = "";
   }
 }
-//JS for Play/Pause Button
+
+//JS for LQ Player Button and Filter
 function togglePlayPause() {
-  var song = document.getElementById("lq-track");
-  {
-    song.paused? song.play() : song.pause();
-  }
+  var lqtrackofthemonth = document.getElementById("lq-track");
+  {lqtrackofthemonth.paused? lqtrackofthemonth.play() : lqtrackofthemonth.pause();}
+  
+  lqtrackofthemonth.onended = function faPlayPauseToggle() {
+    $(".track-button").toggle(); {
+    $("#lq-container").toggleClass("toggle-filter");} {
+    $("#fetch-info").fadeToggle("500");
+    }
+  };
 }
-$(function () {
-  $("#play-pause-button").click(function () {
-      $("#track-button").toggleClass("fa-play fa-pause");
+$(function faPlayPause() {
+  $("#play-pause-button").click(function faPlayPause() {
+    $(".track-button").toggle(); $("#fetch-info").fadeToggle("500");
   });
 });
+function toggleFilter() {
+  var lqPlayer = document.getElementById("lq-container");
+  lqPlayer.classList.toggle("toggle-filter");
+}
