@@ -100,9 +100,11 @@ padding: 0.75vw;
 }
 #lq-container:hover {
     opacity: 1;
+    box-shadow: 0 4px 8px 0 #302f2f, 0 6px 20px 0 #171717;
 }
 #lq-container.toggle-filter {
     opacity: 1;
+    box-shadow: 0 4px 8px 0 #302f2f, 0 6px 20px 0 #171717;
 }
 #fetch-info {
     position: absolute;
@@ -241,15 +243,16 @@ padding: 0.75vw;
     font-family: TBR-700;
     font-size: 1vw;
 }
-#audio-player-progress-container {
+#progress-container {
     margin: 1vw auto 0;
-    height: 0.5vw;
+    height: 0.25vw;
     width: 40vw;
     background: #3a3939;
     border-radius: 2.5vw;
 }
-#audio-player-progress-bar {
+#progress-bar {
     width: 0;
+    height: 0.25vw;
     background: #aaaaaa;
-    height: 0.5vw;
+    border-radius: 2.5vw;
 }
