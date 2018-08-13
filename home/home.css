@@ -76,14 +76,14 @@ padding: 0.75vw;
     font-size: 3vw;
     
 }
-#time-info {
+#totm-timeframe {
     color: #cccccc;
     font-family: TBR-400;
     width: 100%;
     margin: 1vw -2vw;
     padding: 0.5vw 2vw;
     font-size: 1vw;
-    background: #302f2f;
+    background: #222222;
 }
 #tracks-container {
     display: flex;
@@ -169,6 +169,7 @@ padding: 0.75vw;
     margin-left: 1vw;
     width: 42vw;
     padding: 1vw;
+    height: 100%;
 }
 #hq-player {
     display: flex;
@@ -249,7 +250,7 @@ padding: 0.75vw;
     width: 12vw;
     height: 3vw;
     border: 0.25vw solid #1e1e1e;
-    border-radius: 0.5vw;
+    border-radius: 0.25vw;
     background: #1e1e1e;
     position: absolute;
     cursor: pointer;
@@ -265,4 +266,53 @@ padding: 0.75vw;
 }
 #hq-download-button:active {
     transform: translateY(2px);
+}
+#boosted-version-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3vw;
+    font-size: 1vw;
+}
+#bitrate, #trackboosted, #lyricsready, #filesize {
+    background: #222222;
+    border-radius: 0.25vw;
+    padding: 0.25vw 1vw;
+    margin: 0 0.5vw;
+    text-align: center;
+    font-size: 1.25vw;
+    color: #cccccc;
+}
+#bitrate:hover, #trackboosted:hover, #lyricsready:hover, #filesize:hover {
+    background: #333333;
+    color: #dddddd;
+}
+
+#track-license-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 3vw;
+    width: 93.55%;
+    margin: 0.75vw auto;
+}
+#track-license-statement {
+    color: #777777;
+    font-size: 1vw;
+    width: 20vw;
+}
+#license-holder {
+    color: #cccccc;
+    font-size: 1vw;
+}
+#totm-tags {
+    color: #cccccc;
+    font-family: TBR-400;
+    width: 100%;
+    margin: 1.5vw -2vw -2vw;
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
+    background: #222222;
 }

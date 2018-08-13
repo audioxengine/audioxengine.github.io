@@ -34,7 +34,9 @@ function lqButtonToggle() {
 
 function hqButtonToggle() {
   var hqPlayButton = document.getElementById("hq-play-button");
-  
+  var lqContainer = document.getElementById("lq-container");
+
+  lqContainer.classList.remove("toggle-filter");
   hqPlayButton.classList.toggle("boosted");
   $(".hq-toggle-play").toggle();
   $("#fetch-info").fadeIn("500");
