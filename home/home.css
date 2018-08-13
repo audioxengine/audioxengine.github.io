@@ -141,10 +141,10 @@ padding: 0.75vw;
     -moz-animation-name: pulse;
       -o-animation-name: pulse;
          animation-name: pulse;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-      -o-animation-duration: 2s;
-         animation-duration: 2s;
+    -webkit-animation-duration: 0.33s;
+    -moz-animation-duration: 0.33s;
+      -o-animation-duration: 0.33s;
+         animation-duration: 0.33s;
     -webkit-animation-timing-function: linear;
     -moz-animation-timing-function: linear;
       -o-animation-timing-function: linear;
@@ -155,17 +155,17 @@ padding: 0.75vw;
          animation-iteration-count: infinite;
 }
 @-webkit-keyframes pulse {
-    100% {-webkit-transform: scale(1.05);transform: scale(1.05);}
-    100% {-webkit-transform: scale(0.99);transform: scale(0.99);}}
+    90% {-webkit-transform: scale(0.90);transform: scale(0.90);}
+    100% {-webkit-transform: scale(1.05);transform: scale(1.05);}}
 @-moz-keyframes pulse {
-    100% {-moz-transform: scale(1.05);transform: scale(1.05);}
-    100% {-moz-transform: scale(0.99);transform: scale(0.99);}}
+    90% {-moz-transform: scale(0.90);transform: scale(0.90);}
+    100% {-moz-transform: scale(1.05);transform: scale(1.05);}}
 @-o-keyframes pulse {
-    100% {-o-transform: scale(1.05);transform: scale(1.05);}
-    100% {-o-transform: scale(0.99);transform: scale(0.99);}}
+    90% {-o-transform: scale(0.90);transform: scale(0.90);}
+    100% {-o-transform: scale(1.05);transform: scale(1.05);}}
 @keyframes pulse {
-    100% {-webkit-transform: scale(1.01);-moz-transform: scale(1.01);-o-transform: scale(1.01);transform: scale(1.01);}
-    100% {-webkit-transform: scale(0.99);-moz-transform: scale(0.99);-o-transform: scale(0.99);transform: scale(0.99);}}
+    100% {-webkit-transform: scale(0.90);-moz-transform: scale(0.90);-o-transform: scale(0.90);transform: scale(0.90);}
+    100% {-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-o-transform: scale(1.15);transform: scale(1.05);}}
 #lq-track-title {
     color: #cccccc;
     text-align: center;
@@ -263,10 +263,12 @@ padding: 0.75vw;
     cursor: pointer;
     background-position: center;
     transition: all 0.2s ease-in-out;
+    opacity: 0.9;
 }
 #hq-play-button.boosted {
     border: 0.25vw solid #aaaaaa;
     background: #222222;
+    opacity: 1;
 }
 #hq-play-button:active {
     transform: translateY(2px);
@@ -315,7 +317,7 @@ padding: 0.75vw;
     height: 3vw;
     font-size: 1vw;
 }
-#bitrate, #trackboosted, #lyricsready, #filesize {
+#bitrate, #trackboosted, #metaready, #filesize {
     background: #222222;
     border-radius: 0.25vw;
     padding: 0.25vw 1vw;
@@ -324,11 +326,37 @@ padding: 0.75vw;
     font-size: 1.25vw;
     color: #cccccc;
 }
-#bitrate:hover, #trackboosted:hover, #lyricsready:hover, #filesize:hover {
+#bitrate:hover, #trackboosted:hover, #metaready:hover, #filesize:hover {
     background: #333333;
     color: #dddddd;
 }
-
+#custom-mediaelement-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+#custom-mediaelement-rewind, #custom-mediaelement-fastforward {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5%;
+    background: #000000;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+#custom-mediaelement-rewind {
+    text-align: right;
+}
+#custom-mediaelement-fast-forward {
+    text-align: left;
+}
+#custom-mediaelement-progress {
+    pointer-events: none;
+    width: 90%;
+}
 #track-license-info {
     display: flex;
     flex-direction: row;

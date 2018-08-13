@@ -104,7 +104,7 @@
               <i class="fas fa-dot-circle" id="lq-cover-icon"></i>
             </div>
             <span id="lq-track-title">YoutubetoMp3_Download.mp3</span>
-            <div id="lq-play-button" onclick="lqButtonToggle();lqButtonToggle1()">
+            <div id="lq-play-button" onclick="lqButtonToggle();lqButtonToggle1();lqTrackPlay();lqTrackPause()">
               <span class="lq-toggle-play">
                 <i class="fas fa-play"></i>
               </span>
@@ -121,13 +121,13 @@
                 <span id="hq-track-title">In My Feelings</span>
                 <span id="hq-track-artist">Drake</span>
                 <span id="hq-info-divider"></span>
-                <div id="hq-play-button" onclick="hqButtonToggle();hqButtonToggle1();hqButtonToggle2()">
-                    <span class="hq-toggle-play">
-                        <i class="fas fa-play"></i>&nbsp; B O O S T
-                      </span>
-                      <span class="hq-toggle-play" style="display:none;color:#cccccc;">
-                        <i class="fas fa-music"></i>&nbsp; B O O S T D
-                      </span>
+                <div id="hq-play-button" onclick="hqButtonToggle();hqButtonToggle1();hqButtonToggle2();hqTrackPlay();hqTrackPause()">
+                  <span class="hq-toggle-play">
+                    <i class="fas fa-play"></i>&nbsp; B O O S T
+                  </span>
+                  <span class="hq-toggle-play" style="display:none;color:#cccccc;">
+                    <i class="fas fa-music"></i>&nbsp; B O O S T D
+                  </span>
                 </div>
                 <div id="hq-download-button">
                   <span>D O W N L O A D&nbsp;
@@ -137,27 +137,45 @@
               </div>
             </div>
             <div id="boosted-version-info-container">
-              <span id="trackboosted"><i class="fas fa-bolt"></i> TrackBoostD</span>
-              <span id="lyricsready"><i class="fas fa-file-signature"></i> LyricsReady™</span>
-              <span id="bitrate"><i class="fas fa-headphones"></i> 320kbps</span>
-              <span id="filesize"><i class="fas fa-file-download"></i> 9.00MB</span>
+              <span id="trackboosted">
+                <i class="fas fa-bolt"></i> TrackBoostD</span>
+              <span id="metaready">
+                <i class="fas fa-file-signature"></i> MetaReady™</span>
+              <span id="bitrate">
+                <i class="fas fa-headphones"></i> 320kbps</span>
+              <span id="filesize">
+                <i class="fas fa-file-download"></i> 7.95MB</span>
             </div>
           </div>
         </div>
-        <audio id="lq-track" preload="auto" controls="controls" style="width:93.55%">
-          <source src="media/ImagineDragons-Believer(LQ).mp3" type="audio/mpeg">
-          <source src="media/ImagineDragons-Believer(LQ).ogg" type="audio/ogg"> Sorry but it seems that your browser doesn't support Audio Controls.
-        </audio>
+        <div id="custom-mediaelement-container">
+          <div id="custom-mediaelement-rewind" onclick="playBackward()">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div id="custom-mediaelement-progress">
+            <audio id="lq-track" preload="auto" controls="controls" style="width:100%" onended="lqTrackEnded()">
+              <source src="media/InMyFeelings-Drake(LQ).mp3" type="audio/mpeg">
+              <source src="media/InMyFeelings-Drake(LQ).ogg" type="audio/ogg"> Sorry but it seems that your browser doesn't support Audio Controls.
+            </audio>
+            <audio id="hq-track" preload="auto" onended="hqTrackEnded()">
+              <source src="media/InMyFeelings-Drake(HQ).mp3" type="audio/mpeg">
+              <source src="media/InMyFeelings-Drake(HQ).ogg" type="audio/ogg">
+            </audio>
+          </div>
+          <div id="custom-mediaelement-fastforward" onclick="playForward()">
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </div>
         <div id="track-license-info">
-            <span id="track-license-statement">The Original Track is Licensed by</span>
-            <span id="license-holder">
-                UMG (on behalf of Cash Money/Drake LP6); PEDL, Kobalt Music Publishing, Broma 16, Reservoir Media, Peermusic, EMI Music Publishing
-            </span>
-          </div>
+          <span id="track-license-statement">The Original Track is Licensed by</span>
+          <span id="license-holder">
+            UMG (on behalf of Cash Money/Drake LP6); PEDL, Kobalt Music Publishing, Broma 16, Reservoir Media, Peermusic, EMI Music Publishing
+          </span>
+        </div>
         <div id="totm-tags">
-            <i class="fas fa-tags fa-flip-horizontal" style="margin-right:1vw"></i>
-            Hip-Hop/Rap
-          </div>
+          <i class="fas fa-tags fa-flip-horizontal" style="margin-right:1vw"></i>
+          Hip-Hop/Rap
+        </div>
       </div>
       <!-- === === === === === === === === TRACKBOOSTR MAIN END === === === === === === === === -->
 

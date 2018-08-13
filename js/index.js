@@ -1,8 +1,3 @@
-//JS for MediaElement.js
-$(document).ready(function(){$('audio').mediaelementplayer({              
-  features: ['current','progress','duration']
-});});
-
 //JS for Version Box
 function versionVsbltyT() {
   var versionInfo = document.getElementById("version-info");
