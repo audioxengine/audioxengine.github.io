@@ -359,6 +359,9 @@ body {
   background: #242425;
   overflow: hidden;
   width: 66vw;
+  -webkit-box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
+  -moz-box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
+  box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
 }
 #right-container {
   background: #5a5a5b;

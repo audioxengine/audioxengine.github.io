@@ -66,6 +66,9 @@ padding: 0.75vw;
     overflow: hidden;
     user-select: none;
     cursor: context-menu;
+    -webkit-box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
+    -moz-box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
+    box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
 }
 #totm-label {
     color: #ffffff;
@@ -86,6 +89,7 @@ padding: 0.75vw;
     display: flex;
     flex-direction: row;
     padding-top: 1vw;
+    margin-bottom: 1vw;
 }
 #lq-container {
     background: #171717;
@@ -100,11 +104,15 @@ padding: 0.75vw;
 }
 #lq-container:hover {
     opacity: 1;
-    box-shadow: 0 4px 8px 0 #302f2f, 0 6px 20px 0 #171717;
+    -webkit-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
+    -moz-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
+    box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
 }
 #lq-container.toggle-filter {
     opacity: 1;
-    box-shadow: 0 4px 8px 0 #302f2f, 0 6px 20px 0 #171717;
+    -webkit-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
+    -moz-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
+    box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
 }
 #fetch-info {
     position: absolute;
@@ -131,7 +139,7 @@ padding: 0.75vw;
     text-align: center;
     font-size: 1vw;
 }
-#play-pause-button {
+#lq-play-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,10 +151,14 @@ padding: 0.75vw;
     text-align: center;
     cursor: pointer;
 }
-#play-pause-button:active {
+#lq-play-button:hover {
+    background-color: #202020;
+    transition: all 0.2s;
+}
+#lq-play-button:active {
     transform: scale(0.9)
 }
-#play-pause-button .track-button {
+#lq-play-button .lq-toggle-play {
     color: #bbbbbb;
     font-size: 1.5vw;
 }
@@ -201,29 +213,31 @@ padding: 0.75vw;
     justify-content: center;
     text-align: center;
     left: 0vw;
-    bottom: 2vw;
+    bottom: 1.75vw;
     width: 10vw;
-    height: 3vw;
-    border: 0.25vw solid #999999;
+    height: 3.25vw;
+    border: 0.25vw solid #333333;
+    background: #333333;
     border-radius: 3vw;
-    background: #999999;
     position: absolute;
     cursor: pointer;
     background-position: center;
-    transition: all 0.5s;
+    transition: all 0.2s ease-in-out;
 }
-#hq-play-button:hover {
-    background: #999999 radial-gradient(circle, transparent 1%, #999999 1%) center/15000%;
+#hq-play-button.boosted {
+    border: 0.25vw solid #aaaaaa;
+    background: #222222;
 }
 #hq-play-button:active {
-    background-color: #777777;
-    background-size: 100%;
-    transition: all 0s;
+    transform: translateY(2px);
+}
+#hq-play-button:hover span{
+    color: #dddddd;
 }
 #hq-play-button span {
     font-family: TBR-700;
     font-size: 1.25vw;
-    color: #ffffff;
+    color: #aaaaaa;
 }
 #hq-download-button {
     display: flex;
@@ -234,25 +248,21 @@ padding: 0.75vw;
     bottom: 2vw;
     width: 12vw;
     height: 3vw;
-    border: 0.25vw solid #999999;
-    border-radius: 0.25vw;
+    border: 0.25vw solid #1e1e1e;
+    border-radius: 0.5vw;
+    background: #1e1e1e;
     position: absolute;
+    cursor: pointer;
 }
 #hq-download-button span {
-    color: #ffffff;
+    color: #bbbbbb;
     font-family: TBR-700;
-    font-size: 1vw;
+    font-size: 1.25vw;
 }
-#progress-container {
-    margin: 1vw auto 0;
-    height: 0.25vw;
-    width: 40vw;
-    background: #3a3939;
-    border-radius: 2.5vw;
+#hq-download-button:hover {
+    background: #333333;
+    border: 0.25vw solid #333333;
 }
-#progress-bar {
-    width: 0;
-    height: 0.25vw;
-    background: #aaaaaa;
-    border-radius: 2.5vw;
+#hq-download-button:active {
+    transform: translateY(2px);
 }

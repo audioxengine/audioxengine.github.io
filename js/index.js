@@ -1,39 +1,41 @@
+//JS for MediaElement.js
+$(document).ready(function(){$('audio').mediaelementplayer({              
+  features: ['current','progress','duration']
+});});
+
 //JS for Version Box
 function versionVsbltyT() {
-  var x = document.getElementById("version-info");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
+  var versionInfo = document.getElementById("version-info");
+  if (versionInfo.style.visibility === "visible") {
+    versionInfo.style.visibility = "hidden";
   } else {
-    x.style.visibility = "visible";
+    versionInfo.style.visibility = "visible";
   }
 }
 function versionVsbltyH() {
-  var x = document.getElementById("version-info");
-  if (x.style.visibility === "") {
-    x.style.visibility = "";
+  var versionInfo = document.getElementById("version-info");
+  if (versionInfo.style.visibility === "") {
+    versionInfo.style.visibility = "";
   } else {
-    x.style.visibility = "";
+    versionInfo.style.visibility = "";
   }
 }
 
-//JS for LQ Player Button and Filter
-function togglePlayPause() {
-  var lqtrackofthemonth = document.getElementById("lq-track");
-  {lqtrackofthemonth.paused? lqtrackofthemonth.play() : lqtrackofthemonth.pause();}
+//JS for Track of the Month
+
+function lqButtonToggle() {
+  var lqContainer = document.getElementById("lq-container");
   
-  lqtrackofthemonth.onended = function faPlayPauseToggle() {
-    $(".track-button").toggle(); {
-    $("#lq-container").toggleClass("toggle-filter");} {
-    $("#fetch-info").fadeToggle("500");
-    }
-  };
+  lqContainer.classList.toggle("toggle-filter");
+  $(".lq-toggle-play").toggle();
+  $("#fetch-info").fadeToggle("500");
+  
 }
-$(function faPlayPause() {
-  $("#play-pause-button").click(function faPlayPause() {
-    $(".track-button").toggle(); $("#fetch-info").fadeToggle("500");
-  });
-});
-function toggleFilter() {
-  var lqPlayer = document.getElementById("lq-container");
-  lqPlayer.classList.toggle("toggle-filter");
+
+function hqButtonToggle() {
+  var hqPlayButton = document.getElementById("hq-play-button");
+  
+  hqPlayButton.classList.toggle("boosted");
+  $(".hq-toggle-play").toggle();
+  $("#fetch-info").fadeIn("500");
 }

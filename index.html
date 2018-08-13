@@ -15,12 +15,17 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/index.js"></script>
 
+  <script src="build/jquery.js"></script>
+  <script src="build/mediaelement-and-player.min.js"></script>
+  <link rel="stylesheet" href="build/mediaelementplayer.css" />
+
 </head>
 
 <body>
   <div class="header-container">
     <a id="header-logo" href="https://trackboostr.github.io/">
-      <img src="assets/logos/tbr-logo.png" alt="tbr-logo.png" id="tbr-header"></a>
+      <img src="assets/logos/tbr-logo.png" alt="tbr-logo.png" id="tbr-header">
+    </a>
     <div id="rightheader-box">
       <div id="search-box" onclick="versionVsbltyH()">
         <input type="text" placeholder="Search">
@@ -29,7 +34,8 @@
         </button>
       </div>
       <div id="version-box" onclick="versionVsbltyT()">
-        <div id="version-id"> <b>Hey, we're now on BETA!*</b>
+        <div id="version-id">
+          <b>Hey, we're now on BETA!*</b>
           <span id="version-info">Welcome! As you can see,
             <b>TrackBoostR</b> is still under development. Stay tuned as we grow and feel free to reach me using the
             <b>"Contact Tab"</b> if you have questions or suggestions. Cheers!
@@ -48,78 +54,99 @@
     <div id="left-container">
       <div id="sidenav-container">
         <div class="active-sidenav-menu">
-          <a href="https://trackboostr.github.io" class="active-sidenav-icons"> <i class="tbr-emblem"></i> </a>
+          <a href="https://trackboostr.github.io" class="active-sidenav-icons">
+            <i class="tbr-emblem"></i>
+          </a>
           <a href="https://trackboostr.github.io" class="active-sidenav-label">HOME</a>
         </div>
 
         <div class="sidenav-menu">
-          <a href="https://trackboostr.github.io/tracks" class="sidenav-icons"> <i class="tbr-tracks"></i> </a>
+          <a href="https://trackboostr.github.io/tracks" class="sidenav-icons">
+            <i class="tbr-tracks"></i>
+          </a>
           <a href="https://trackboostr.github.io/tracks" class="sidenav-label">TRACKS</a>
         </div>
 
         <div class="sidenav-menu">
-          <a href="https://trackboostr.github.io/random" class="sidenav-icons"> <i class="tbr-random"></i> </a>
+          <a href="https://trackboostr.github.io/random" class="sidenav-icons">
+            <i class="tbr-random"></i>
+          </a>
           <a href="https://trackboostr.github.io/random" class="sidenav-label">RANDOM</a>
         </div>
-        
+
         <div class="sidenav-menu">
-          <a href="https://trackboostr.github.io/archive" class="sidenav-icons"> <i class="tbr-archive"></i> </a>
+          <a href="https://trackboostr.github.io/archive" class="sidenav-icons">
+            <i class="tbr-archive"></i>
+          </a>
           <a href="https://trackboostr.github.io/archive" class="sidenav-label">ARCHIVE</a>
         </div>
 
         <div class="sidenav-menu">
-          <a href="https://trackboostr.github.io/about" class="sidenav-icons"> <i class="tbr-about"></i> </a>
+          <a href="https://trackboostr.github.io/about" class="sidenav-icons">
+            <i class="tbr-about"></i>
+          </a>
           <a href="https://trackboostr.github.io/about" class="sidenav-label">ABOUT</a>
         </div>
       </div>
     </div>
     <div id="center-container">
-    <!-- === === === === === === === === TRACKBOOSTR === === === === === === === === -->
-    <div id="track-otm-container">
-      <div id="totm-label">BoostD Track of the Month! –</div>
-      <div id="time-info"><i class="far fa-calendar-check" style="margin-right:1vw"></i>For the Month of <b>August 2018</b></div>
-      <div id="tracks-container">
-        <div id="lq-container">
-          <span id="fetch-info">Track Fetched @ 128kbps</span>
-          <div id="lq-cover"><i class="fas fa-dot-circle" id="lq-cover-icon"></i></div>
-          <span id="lq-track-title">YoutubetoMp3_Download.mp3</span>
-          <div id="play-pause-button" onclick="togglePlayPause();toggleFilter()">
-              <span class="track-button"><i class="fas fa-play"></i></span>
-              <span class="track-button"  style="display:none"><i class="fas fa-pause"></i></span>
-          </div>
-          <audio id="lq-track" preload="auto">
-            <source src="media/ImagineDragons-Believer(LQ).mp3" type="audio/mpeg">
-            <source src="media/ImagineDragons-Believer(LQ).ogg" type="audio/ogg">
-          </audio>
+
+      <!-- === === === === === === === === TRACKBOOSTR MAIN START === === === === === === === === -->
+      <div id="track-otm-container">
+        <div id="totm-label">BoostD Track of the Month! –</div>
+        <div id="time-info">
+          <i class="far fa-calendar-check" style="margin-right:1vw"></i>For the Month of
+          <b>August 2018</b>
         </div>
-        <div id="hq-container">
-          <div id="hq-player">
-            <img id="album-art" src="https://raw.githubusercontent.com/trackboostr/media/master/ImagineDragons-Believer.jpg" alt="album-art.alt">
-            <div id="hq-track-info-holder">
-              <span id="hq-track-single">S I N G L E</span>
-              <span id="hq-track-title">Believer</span>
-              <span id="hq-track-artist">Imagine Dragons</span>
-              <span id="hq-info-divider"></span>
-              <div id="hq-play-button">
-                <span>
-                    <i class="fas fa-play" style="font-size:75%"></i>&nbsp;&nbsp;P&nbsp;L&nbsp;A&nbsp;Y
-                </span>
-              </div>
-              <div id="hq-download-button">
-                  <span>
-                      D&nbsp;O&nbsp;W&nbsp;N&nbsp;L&nbsp;O&nbsp;A&nbsp;D&nbsp;&nbsp;<i class="fas fa-download" style="font-size:75%"></i>
-                  </span>
-              </div>
+        <div id="tracks-container">
+          <div id="lq-container">
+            <span id="fetch-info">Track Fetched @ 128kbps</span>
+            <div id="lq-cover">
+              <i class="fas fa-dot-circle" id="lq-cover-icon"></i>
+            </div>
+            <span id="lq-track-title">YoutubetoMp3_Download.mp3</span>
+            <div id="lq-play-button" onclick="lqButtonToggle()">
+              <span class="lq-toggle-play">
+                <i class="fas fa-play"></i>
+              </span>
+              <span class="lq-toggle-play" style="display:none">
+                <i class="fas fa-pause"></i>
+              </span>
             </div>
           </div>
-          <div id="progress-container">    
-            <div id="progress-bar">
+          <div id="hq-container">
+            <div id="hq-player">
+              <img id="album-art" src="https://raw.githubusercontent.com/trackboostr/media/master/ImagineDragons-Believer.jpg" alt="album-art.alt">
+              <div id="hq-track-info-holder">
+                <span id="hq-track-single">S I N G L E</span>
+                <span id="hq-track-title">Believer</span>
+                <span id="hq-track-artist">Imagine Dragons</span>
+                <span id="hq-info-divider"></span>
+                <div id="hq-play-button" onclick="hqButtonToggle()">
+                    <span class="hq-toggle-play">
+                        <i class="fas fa-play"></i>&nbsp; B O O S T
+                      </span>
+                      <span class="hq-toggle-play" style="display:none;color:#cccccc;">
+                        <i class="fas fa-music"></i>&nbsp; B O O S T D
+                      </span>
+                </div>
+                <div id="hq-download-button">
+                  <span>D O W N L O A D&nbsp;
+                    <i class="fas fa-download" style="font-size:75%"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
           </div>
-      </div>
         </div>
+        <audio id="lq-track" preload="auto" controls="controls" style="width:93.55%">
+          <source src="media/ImagineDragons-Believer(LQ).mp3" type="audio/mpeg">
+          <source src="media/ImagineDragons-Believer(LQ).ogg" type="audio/ogg"> Sorry but it seems that your browser doesn't support Audio Controls.
+        </audio>
       </div>
-    </div>
-    <!-- === === === === === === === === TRACKBOOSTR === === === === === === === === -->
+      <!-- === === === === === === === === TRACKBOOSTR MAIN END === === === === === === === === -->
+
     </div>
     <div id="right-container">
     </div>
@@ -136,10 +163,10 @@
       <div id="cfooter-botlayer">
         <div class="cfooterbot-container">
           <div id="cfbot-left" style="width:35%;height:8vw">
-          <span id="boosted-tracks">boosted tracks</span>
-          <a href="https://www.audacityteam.org/" target="_blank">
-            <img src="assets/logos/audacity-art.png" alt="audacity-art.png" id="audacity-art">
-          </a>
+            <span id="boosted-tracks">boosted tracks</span>
+            <a href="https://www.audacityteam.org/" target="_blank">
+              <img src="assets/logos/audacity-art.png" alt="audacity-art.png" id="audacity-art">
+            </a>
           </div>
           <div id="cfbot-center" style="width:38%;height:8vw">
             <a href="https://trackboostr.github.io/about" class="footer-links" id="footer-about">ABOUT</a>
@@ -147,7 +174,8 @@
             <a href="https://trackboostr.github.io/about" class="footer-links" id="footer-contribute">CONTRIBUTE</a>
             <a href="#">
               <img src="assets/logos/tbr-logo-alt.png" alt="tbr-logo-alt.png" id="tbr-footer">
-              <span id="footer-copyright">2018 (C) TRACKBOOSTR.GITHUB.IO</span></a>
+              <span id="footer-copyright">2018 (C) TRACKBOOSTR.GITHUB.IO</span>
+            </a>
           </div>
           <div id="cfbot-right" style="width:27%;height:8vw">
             <span id="created-with">created with</span>
@@ -176,16 +204,7 @@
 
 </body>
 
-    <!-- CC on Index -->
-    <script>$(".cc-container").hide(),setTimeout(function(){$(".cc-container").slideToggle()},3e3),$("#cc-policy").hide(),setTimeout(function(){$("#cc-policy").fadeIn(50)},3400),$("#cc-close").hide(),setTimeout(function(){$("#cc-close").fadeIn(50)},3400),$("#cc-close").click(function(){$(".cc-container").fadeOut(250)}),$("#cc-close").click(function(){$("#cc-close").fadeOut(250)}),$("#cc-close").click(function(){$("#cc-policy").fadeOut(250)});</script>
-
-    <script>
-var player = document.getElementById('lq-track');    
-player.addEventListener("timeupdate", function() {
-    var currentTime = player.currentTime;
-    var duration = player.duration;
-    $('#progress-bar').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-});
-    </script>
+<!-- CC on Index -->
+<script>$(".cc-container").hide(), setTimeout(function () { $(".cc-container").slideToggle() }, 3e3), $("#cc-policy").hide(), setTimeout(function () { $("#cc-policy").fadeIn(50) }, 3400), $("#cc-close").hide(), setTimeout(function () { $("#cc-close").fadeIn(50) }, 3400), $("#cc-close").click(function () { $(".cc-container").fadeOut(250) }), $("#cc-close").click(function () { $("#cc-close").fadeOut(250) }), $("#cc-close").click(function () { $("#cc-policy").fadeOut(250) });</script>
 
 </html>
