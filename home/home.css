@@ -133,7 +133,39 @@ padding: 0.75vw;
     color: #333333;
     font-size: 10vw;
     line-height: 12vw;
+    transition: color 0.2s ease-in-out;
 }
+#lq-cover-icon.active {
+    color: #cccccc;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+      -o-animation-name: pulse;
+         animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+      -o-animation-duration: 2s;
+         animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+         animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+         animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+    100% {-webkit-transform: scale(1.05);transform: scale(1.05);}
+    100% {-webkit-transform: scale(0.99);transform: scale(0.99);}}
+@-moz-keyframes pulse {
+    100% {-moz-transform: scale(1.05);transform: scale(1.05);}
+    100% {-moz-transform: scale(0.99);transform: scale(0.99);}}
+@-o-keyframes pulse {
+    100% {-o-transform: scale(1.05);transform: scale(1.05);}
+    100% {-o-transform: scale(0.99);transform: scale(0.99);}}
+@keyframes pulse {
+    100% {-webkit-transform: scale(1.01);-moz-transform: scale(1.01);-o-transform: scale(1.01);transform: scale(1.01);}
+    100% {-webkit-transform: scale(0.99);-moz-transform: scale(0.99);-o-transform: scale(0.99);transform: scale(0.99);}}
 #lq-track-title {
     color: #cccccc;
     text-align: center;
@@ -170,6 +202,13 @@ padding: 0.75vw;
     width: 42vw;
     padding: 1vw;
     height: 100%;
+    transition: all 0.2s ease-in-out;
+}
+#hq-container.inactive {
+    opacity: 0.25;
+}
+#hq-container:hover{
+    opacity: 1;
 }
 #hq-player {
     display: flex;
