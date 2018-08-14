@@ -28,6 +28,7 @@ height: 3.25vw;
     padding: 0.25vw 0;
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 #cc-policy {
 color: #101010;
@@ -44,8 +45,11 @@ color: #fefefe;
 cursor: pointer;
 font-family: TBR-700;
 font-size: 1.25vw;
-margin: 0 0.5vw;
+margin: 0 2vw 0 0.5vw;
 padding: 0.75vw;
+}
+#cc-close:hover {
+background: #323232;
 }
 #cc-close:active {
     -webkit-transform: translateY(2px);
@@ -59,15 +63,10 @@ padding: 0.75vw;
     flex-direction: column;
     justify-content: flex-start;
 }
-#center-container.activate {
-    transition: 10s ease;
-    background-position: center;
-    background-image: url("https://raw.githubusercontent.com/trackboostr/media/master/background-images/InMyFeelings-DrakeBackground.jpg");
-}
 #track-otm-container {
     background:  linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%),
     linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    margin: 1vw 2vw 4vw;
+    margin: 1vw 2vw 2vw;
     padding: 2vw;
     overflow: hidden;
     user-select: none;
@@ -145,10 +144,10 @@ padding: 0.75vw;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-      -o-animation-name: pulse;
-         animation-name: pulse;
+    -webkit-animation-name: beats;
+    -moz-animation-name: beats;
+      -o-animation-name: beats;
+         animation-name: beats;
     -webkit-animation-duration: 0.33s;
     -moz-animation-duration: 0.33s;
       -o-animation-duration: 0.33s;
@@ -162,17 +161,17 @@ padding: 0.75vw;
       -o-animation-iteration-count: infinite;
          animation-iteration-count: infinite;
 }
-@-webkit-keyframes pulse {
+@-webkit-keyframes beats {
     90% {-webkit-transform: scale(0.90);transform: scale(0.90);}
     100% {-webkit-transform: scale(1.05);transform: scale(1.05);}}
-@-moz-keyframes pulse {
+@-moz-keyframes beats {
     90% {-moz-transform: scale(0.90);transform: scale(0.90);}
     100% {-moz-transform: scale(1.05);transform: scale(1.05);}}
-@-o-keyframes pulse {
+@-o-keyframes beats {
     90% {-o-transform: scale(0.90);transform: scale(0.90);}
     100% {-o-transform: scale(1.05);transform: scale(1.05);}}
-@keyframes pulse {
-    100% {-webkit-transform: scale(0.90);-moz-transform: scale(0.90);-o-transform: scale(0.90);transform: scale(0.90);}
+@keyframes beats {
+    90% {-webkit-transform: scale(0.90);-moz-transform: scale(0.90);-o-transform: scale(0.90);transform: scale(0.90);}
     100% {-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-o-transform: scale(1.15);transform: scale(1.05);}}
 #lq-track-title {
     color: #eeeeee;
@@ -272,19 +271,16 @@ box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     bottom: 1.75vw;
     width: 10vw;
     height: 3.25vw;
-    border: 0.25vw solid #333333;
-    background: #333333;
+    border: 0.25vw solid #222222;
+    background: #222222;
     border-radius: 3vw;
     position: absolute;
     cursor: pointer;
     background-position: center;
-    transition: all 0.2s ease-in-out;
-    opacity: 0.9;
 }
 #hq-play-button.boosted {
     border: 0.25vw solid #eeeeee;
     background: #222222;
-    opacity: 1;
 }
 #hq-play-button:hover {
     border: 0.25vw solid #ffffff;
@@ -295,7 +291,7 @@ box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
 #hq-play-button span {
     font-family: TBR-700;
     font-size: 1.25vw;
-    color: #eeeeee;
+    color: #cccccc;
 }
 #hq-play-button:hover span{
     color: #ffffff;
@@ -420,4 +416,24 @@ box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     background: #777777;
     color: #ffffff;
     right: 2vw;
+}
+#more-totm {
+    background: #000000;
+    margin: 0 2vw 2vw 0;
+    border: 0.25vw solid #000000;
+    border-radius: 0.2vw;
+    width: 9.35vw;
+    text-align: center;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 1.5vw;
+}
+#more-totm:hover {
+    background: #111111;
+    border: 0.25vw solid #111111;
+    color: #ffffff;
+}
+#more-totm:active {
+    transform: translateY(2px);
 }

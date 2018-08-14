@@ -28,9 +28,9 @@ function hqButtonToggle1() {
     }
 }
 function lqButtonToggle1() {
-    if ($('#hq-play-button').hasClass('boosted')) {
+    if ($('#hq-container').hasClass('active')) {
         var hqPlayButton = document.getElementById("hq-play-button");
-        hqPlayButton.classList.toggle("boosted");
+        hqPlayButton.classList.remove("boosted");
         $(".hq-toggle-play").toggle();
     }
 }
@@ -45,8 +45,6 @@ function lqTrackPlay() {
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
         $("#fetch-info").fadeIn("500");
-        var mainContainer = document.getElementById("center-container");
-        mainContainer.classList.remove("activate");
         var hqContainer = document.getElementById("hq-container");
         hqContainer.classList.remove("active");
     }
@@ -59,7 +57,7 @@ function lqTrackPlay() {
     }
 }
 function hqTrackPlay() {
-    if ($('#hq-play-button').css('opacity') == '0.9') {
+    if ($('#hq-container').hasClass("")) {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
         hqTrack.play(); lqTrack.play();
@@ -68,8 +66,6 @@ function hqTrackPlay() {
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.add("active");
         $("#fetch-info").fadeOut("500");
-        var mainContainer = document.getElementById("center-container");
-        mainContainer.classList.add("activate");
         var hqContainer = document.getElementById("hq-container");
         hqContainer.classList.add("active");
     }
@@ -80,10 +76,9 @@ function hqTrackPlay() {
         hqTrack.pause();
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
-        var mainContainer = document.getElementById("center-container");
-        mainContainer.classList.remove("activate");
         var hqContainer = document.getElementById("hq-container");
         hqContainer.classList.remove("active");
+        $("#fetch-info").fadeIn("500");
     }
 }
 function playForward() {
@@ -111,14 +106,12 @@ function lqTrackEnded() {
     }
 }
 function hqTrackEnded() {
-    if ($('#hq-play-button').hasClass('boosted')) {
+    if ($('#hq-container').hasClass('active')) {
         var hqPlayButton = document.getElementById("hq-play-button");
         hqPlayButton.classList.toggle("boosted");
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
         $("#fetch-info").fadeIn("500");
-        var mainContainer = document.getElementById("center-container");
-        mainContainer.classList.remove("activate");
         var hqContainer = document.getElementById("hq-container");
         hqContainer.classList.remove("active");
     }
