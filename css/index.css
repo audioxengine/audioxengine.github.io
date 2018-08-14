@@ -168,7 +168,7 @@ body {
   font-size: 1.1vw;
   padding: 0.5vw;
   position: absolute;
-  right: -17.5%;
+  right: -26%;
   text-align: center;
   top: 120%;
   visibility: hidden;
@@ -176,7 +176,7 @@ body {
   z-index: 1;
 }
 #version-info::after {
-  border-color: transparent transparent #111 transparent;
+  border-color: transparent transparent #222222 transparent;
   border-style: solid;
   border-width: 0.25vw;
   bottom: 100%;
