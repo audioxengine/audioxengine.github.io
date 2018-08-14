@@ -111,5 +111,7 @@ function hqTrackEnded() {
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
         $("#fetch-info").fadeIn("500");
+        var mainContainer = document.getElementById("center-container");
+        mainContainer.classList.remove("activate");
     }
 }
