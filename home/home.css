@@ -59,16 +59,50 @@ padding: 0.75vw;
     flex-direction: column;
     justify-content: flex-start;
 }
+#center-container.activate {
+    transition: 10s ease;
+    background-position: center;
+    background-image: url("https://raw.githubusercontent.com/trackboostr/media/master/background-images/InMyFeelings-DrakeBackground.jpg");
+}
+#lq-cover-icon.active {
+    color: #ffffff;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+      -o-animation-name: pulse;
+         animation-name: pulse;
+    -webkit-animation-duration: 0.33s;
+    -moz-animation-duration: 0.33s;
+      -o-animation-duration: 0.33s;
+         animation-duration: 0.33s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+         animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+         animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+    90% {-webkit-transform: scale(0.90);transform: scale(0.90);}
+    100% {-webkit-transform: scale(1.05);transform: scale(1.05);}}
+@-moz-keyframes pulse {
+    90% {-moz-transform: scale(0.90);transform: scale(0.90);}
+    100% {-moz-transform: scale(1.05);transform: scale(1.05);}}
+@-o-keyframes pulse {
+    90% {-o-transform: scale(0.90);transform: scale(0.90);}
+    100% {-o-transform: scale(1.05);transform: scale(1.05);}}
+@keyframes pulse {
+    100% {-webkit-transform: scale(0.90);-moz-transform: scale(0.90);-o-transform: scale(0.90);transform: scale(0.90);}
+    100% {-webkit-transform: scale(1.05);-moz-transform: scale(1.05);-o-transform: scale(1.15);transform: scale(1.05);}}
 #track-otm-container {
-    background: #3a3939;
+    background: linear-gradient(to bottom, #3a3939 0%, #3c3b3b 100%),
+    radial-gradient(at top center, #3a3939 0%, #3c3b3b 120%)#3c3b3b;
     margin: 1vw 2vw 4vw;
     padding: 2vw;
     overflow: hidden;
     user-select: none;
     cursor: context-menu;
-    -webkit-box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
-    -moz-box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
-    box-shadow: 0vw 0.347vw 0.347vw 0.347vw #171717;
 }
 #totm-label {
     color: #ffffff;
@@ -83,7 +117,8 @@ padding: 0.75vw;
     margin: 1vw -2vw;
     padding: 0.5vw 2vw;
     font-size: 1vw;
-    background: #222222;
+    background: linear-gradient(to bottom, #222222 0%, #242424 100%),
+    radial-gradient(at top center, #222222 0%, #242424 120%)#242424;
 }
 #tracks-container {
     display: flex;
@@ -381,12 +416,13 @@ padding: 0.75vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    color: #cccccc;
+    color: #f0f0f0;
     font-family: TBR-400;
     margin: 1.5vw -2vw -2vw;
     padding: 0.5vw 2vw 0.75vw;
     font-size: 1vw;
-    background: #222222;
+    background: linear-gradient(to bottom, #212121 0%, #232323 100%),
+    radial-gradient(at top center, #212121 0%, #232323 120%)#232323;
     position: relative;
 }
 .totm-tags {
@@ -397,6 +433,6 @@ padding: 0.75vw;
     position: absolute;
     padding: 0.25vw 1vw;
     background: #777777;
-    color: #cccccc;
+    color: #ffffff;
     right: 2vw;
 }

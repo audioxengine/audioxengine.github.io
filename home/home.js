@@ -45,6 +45,8 @@ function lqTrackPlay() {
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
         $("#fetch-info").fadeIn("500");
+        var mainContainer = document.getElementById("center-container");
+        mainContainer.classList.remove("activate");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
@@ -64,6 +66,8 @@ function hqTrackPlay() {
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.add("active");
         $("#fetch-info").fadeOut("500");
+        var mainContainer = document.getElementById("center-container");
+        mainContainer.classList.add("activate");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
@@ -72,6 +76,8 @@ function hqTrackPlay() {
         hqTrack.pause();
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
+        var mainContainer = document.getElementById("center-container");
+        mainContainer.classList.remove("activate");
     }
 }
 function playForward() {

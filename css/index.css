@@ -219,7 +219,8 @@ body {
   width: 100%;
 }
 #left-container {
-  background: #000000;
+  background: linear-gradient(to bottom, #000000 0%, #020202 100%),
+  radial-gradient(at top center, #000000 0%, #020202 120%)#020202;
   width: 8vw;
 }
 #sidenav-container {
@@ -356,15 +357,19 @@ body {
   transition: 0s;
 }
 #center-container {
-  background: #242425;
+  background: linear-gradient(to bottom, #242425 0%, #262627 100%),
+  radial-gradient(at top center, #242425 0%, #262627 120%)#262627;
   overflow: hidden;
   width: 66vw;
-  -webkit-box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
-  -moz-box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
-  box-shadow: inset 0vw 0.347vw 0.347vw 0.347vw #171717;
+  margin-top: -1vw;
+  padding-top: 1vw;
+  -webkit-box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
+  -moz-box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
+  box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
 }
 #right-container {
-  background: #5a5a5b;
+  background: linear-gradient(to bottom, #5a5a5b 0%, #5c5c5d 100%),
+  radial-gradient(at top center, #5a5a5b 0%, #5c5c5d 120%)#5c5c5d;
   overflow: hidden;
   width: 26vw;
 }
@@ -409,11 +414,13 @@ body {
   width: 8vw;
 }
 #left-footer-top {
-  background: #121213;
+  background: linear-gradient(to bottom, #121213 0%, #141415 100%),
+  radial-gradient(at top center, #121213 0%, #141415 120%)#141415;
   height: 8vw;
 }
 #left-footer-bot {
-  background: #242425;
+  background: linear-gradient(to bottom, #242425 0%, #262627 100%),
+  radial-gradient(at top center, #242425 0%, #262627 120%)#262627;
   height: 8vw;
   position: relative;
 }
@@ -457,11 +464,13 @@ body {
   width: 66vw;
 }
 #cfooter-toplayer {
-  background: #363636;
+  background: linear-gradient(to bottom, #363636 0%, #383838 100%),
+  radial-gradient(at top center, #363636 0%, #383838 120%)#383838;
   height: 8vw;
 }
 #cfooter-botlayer {
-  background: #040404;
+  background: linear-gradient(to bottom, #040404 0%, #060606 100%),
+  radial-gradient(at top center, #040404 0%, #060606 120%)#060606;
   height: 8vw;
 }
 .cfooterbot-container {
@@ -621,7 +630,8 @@ body {
   width: 26vw;
 }
 #right-footer-top {
-  background: #a8a8a8;
+  background: linear-gradient(to bottom, #a8a8a8 0%, #aaaaaa 100%),
+  radial-gradient(at top center, #a8a8a8 0%, #aaaaaa 120%)#aaaaaa;
   height: 8vw;
 }
 #right-footer-bot {
