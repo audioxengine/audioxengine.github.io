@@ -47,6 +47,8 @@ function lqTrackPlay() {
         $("#fetch-info").fadeIn("500");
         var mainContainer = document.getElementById("center-container");
         mainContainer.classList.remove("activate");
+        var hqContainer = document.getElementById("hq-container");
+        hqContainer.classList.remove("active");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
@@ -68,6 +70,8 @@ function hqTrackPlay() {
         $("#fetch-info").fadeOut("500");
         var mainContainer = document.getElementById("center-container");
         mainContainer.classList.add("activate");
+        var hqContainer = document.getElementById("hq-container");
+        hqContainer.classList.add("active");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
@@ -78,6 +82,8 @@ function hqTrackPlay() {
         lqAlbumIcon.classList.remove("active");
         var mainContainer = document.getElementById("center-container");
         mainContainer.classList.remove("activate");
+        var hqContainer = document.getElementById("hq-container");
+        hqContainer.classList.remove("active");
     }
 }
 function playForward() {
@@ -113,5 +119,7 @@ function hqTrackEnded() {
         $("#fetch-info").fadeIn("500");
         var mainContainer = document.getElementById("center-container");
         mainContainer.classList.remove("activate");
+        var hqContainer = document.getElementById("hq-container");
+        hqContainer.classList.remove("active");
     }
 }

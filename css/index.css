@@ -359,15 +359,9 @@ body {
   transition: 0s;
 }
 #center-container {
-  background: linear-gradient(to bottom, #242425 0%, #262627 100%),
-  radial-gradient(at top center, #242425 0%, #262627 120%)#262627;
+  background: linear-gradient(120deg, #242425 0%, black 100%) #242425;
   overflow: hidden;
   width: 66vw;
-  margin-top: -1vw;
-  padding-top: 1vw;
-  -webkit-box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
-  -moz-box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
-  box-shadow: inset 0vw 0.3vw 0.3vw 0.3vw #171717;
 }
 #right-container {
   background: linear-gradient(to bottom, #5a5a5b 0%, #5c5c5d 100%),
