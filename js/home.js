@@ -5,34 +5,13 @@ $(document).ready(function () {
     });
 });
 
-// Track of the Month 
-function lqTrackEnded() {
-    if ($('#lq-cover-icon').hasClass('active')) {
-        var lqContainer = document.getElementById("lq-container");
-        var lqAlbumIcon = document.getElementById("lq-cover-icon");
-        var hqContainer = document.getElementById("hq-container");
-        lqContainer.classList.toggle("toggle-filter");
-        lqAlbumIcon.classList.toggle("active");
-        hqContainer.classList.toggle("inactive");
-        $(".lq-toggle-play").toggle();
-        $("#fetch-info").fadeToggle("500");
-    }
-}
-function hqTrackEnded() {
-    if ($('#hq-play-button').hasClass('boosted')) {
-        var hqPlayButton = document.getElementById("hq-play-button");
-        hqPlayButton.classList.toggle("boosted");
-    }
-}
+// Track of the Month
 function lqButtonToggle() {
     var lqContainer = document.getElementById("lq-container");
-    var lqAlbumIcon = document.getElementById("lq-cover-icon");
     var hqContainer = document.getElementById("hq-container");
     lqContainer.classList.toggle("toggle-filter");
-    lqAlbumIcon.classList.toggle("active");
     hqContainer.classList.toggle("inactive");
     $(".lq-toggle-play").toggle();
-    $("#fetch-info").fadeToggle("500");
 }
 function hqButtonToggle() {
     var hqPlayButton = document.getElementById("hq-play-button");
@@ -42,17 +21,10 @@ function hqButtonToggle() {
     hqPlayButton.classList.toggle("boosted");
     hqContainer.classList.remove("inactive");
     $(".hq-toggle-play").toggle();
-    $("#fetch-info").fadeIn("500");
 }
 function hqButtonToggle1() {
     if ($('#lq-container').css('opacity') == '1') {
         $(".lq-toggle-play").toggle();
-    }
-}
-function hqButtonToggle2() {
-    if ($('#hq-container').css('opacity') == '1') {
-        var lqAlbumIcon = document.getElementById("lq-cover-icon");
-        lqAlbumIcon.classList.remove("active");
     }
 }
 function lqButtonToggle1() {
@@ -62,17 +34,24 @@ function lqButtonToggle1() {
         $(".hq-toggle-play").toggle();
     }
 }
+
+// GraFX Toggles (c) TrackBoostR on Media Controls
 function lqTrackPlay() {
     if ($('#hq-container').css('opacity') == '1') {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
         lqTrack.play(); hqTrack.play();
         lqTrack.muted = false; hqTrack.muted = true;
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.remove("active");
+        $("#fetch-info").fadeIn("500");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
         lqTrack.pause(); hqTrack.pause();
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.remove("active");
     }
 }
 function hqTrackPlay() {
@@ -82,12 +61,17 @@ function hqTrackPlay() {
         hqTrack.play(); lqTrack.play();
         hqTrack.muted = false;
         lqTrack.muted = true;
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.add("active");
+        $("#fetch-info").fadeOut("500");
     }
     else {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
         lqTrack.pause();
         hqTrack.pause();
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.remove("active");
     }
 }
 function playForward() {
@@ -101,4 +85,25 @@ function playBackward() {
     var hqTrack = document.getElementById('hq-track');
     lqTrack.currentTime -= lqTrack.duration / 20;
     hqTrack.currentTime -= hqTrack.duration / 20;
+}
+function lqTrackEnded() {
+    if ($('#lq-container').css('opacity') == '1') {
+        var lqContainer = document.getElementById("lq-container");
+
+        var hqContainer = document.getElementById("hq-container");
+        lqContainer.classList.toggle("toggle-filter");
+
+        hqContainer.classList.toggle("inactive");
+        $(".lq-toggle-play").toggle();
+        $("#fetch-info").fadeIn("500");
+    }
+}
+function hqTrackEnded() {
+    if ($('#hq-play-button').hasClass('boosted')) {
+        var hqPlayButton = document.getElementById("hq-play-button");
+        hqPlayButton.classList.toggle("boosted");
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.remove("active");
+        $("#fetch-info").fadeIn("500");
+    }
 }

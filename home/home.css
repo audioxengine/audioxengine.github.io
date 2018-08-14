@@ -136,7 +136,7 @@ padding: 0.75vw;
     transition: color 0.2s ease-in-out;
 }
 #lq-cover-icon.active {
-    color: #cccccc;
+    color: #ffffff;
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
       -o-animation-name: pulse;
@@ -350,12 +350,15 @@ padding: 0.75vw;
 #custom-mediaelement-rewind {
     text-align: right;
 }
-#custom-mediaelement-fast-forward {
-    text-align: left;
-}
 #custom-mediaelement-progress {
     pointer-events: none;
     width: 90%;
+}
+#custom-mediaelement-rewind i:active{
+    transform: translateX(-5px);
+}
+#custom-mediaelement-fastforward i:active{
+    transform: translateX(5px);
 }
 #track-license-info {
     display: flex;
@@ -374,12 +377,26 @@ padding: 0.75vw;
     color: #cccccc;
     font-size: 1vw;
 }
-#totm-tags {
+#totm-tags-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     color: #cccccc;
     font-family: TBR-400;
-    width: 100%;
     margin: 1.5vw -2vw -2vw;
-    padding: 0.5vw 2vw;
+    padding: 0.5vw 2vw 0.75vw;
     font-size: 1vw;
     background: #222222;
+    position: relative;
+}
+.totm-tags {
+    margin-right: 1vw;
+    align-self: center;
+}
+#explicit-content {
+    position: absolute;
+    padding: 0.25vw 1vw;
+    background: #777777;
+    color: #cccccc;
+    right: 2vw;
 }
