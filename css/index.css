@@ -274,7 +274,7 @@ body {
   padding: 1vw;
 }
 .active-sidenav-menu {
-  background: #cccccc;
+  background: #eeeeee;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
