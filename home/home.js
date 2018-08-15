@@ -9,7 +9,7 @@ $(document).ready(function () {
 function lqButtonToggle() {
     var lqContainer = document.getElementById("lq-container");
     var hqContainer = document.getElementById("hq-container");
-    lqContainer.classList.toggle("toggle-filter");
+    lqContainer.classList.toggle("lq-filter");
     hqContainer.classList.toggle("inactive");
     $(".lq-toggle-play").toggle();
 }
@@ -17,7 +17,7 @@ function hqButtonToggle() {
     var hqPlayButton = document.getElementById("hq-play-button");
     var lqContainer = document.getElementById("lq-container");
     var hqContainer = document.getElementById("hq-container");
-    lqContainer.classList.remove("toggle-filter");
+    lqContainer.classList.remove("lq-filter");
     hqPlayButton.classList.toggle("boosted");
     hqContainer.classList.remove("inactive");
     $(".hq-toggle-play").toggle();
@@ -61,8 +61,7 @@ function hqTrackPlay() {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
         hqTrack.play(); lqTrack.play();
-        hqTrack.muted = false;
-        lqTrack.muted = true;
+        hqTrack.muted = false;lqTrack.muted = true;
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.add("active");
         $("#fetch-info").fadeOut("500");
@@ -72,8 +71,7 @@ function hqTrackPlay() {
     else {
         var lqTrack = document.getElementById('lq-track');
         var hqTrack = document.getElementById('hq-track');
-        lqTrack.pause();
-        hqTrack.pause();
+        lqTrack.pause();hqTrack.pause();
         var lqAlbumIcon = document.getElementById("lq-cover-icon");
         lqAlbumIcon.classList.remove("active");
         var hqContainer = document.getElementById("hq-container");
@@ -84,22 +82,20 @@ function hqTrackPlay() {
 function playForward() {
     var lqTrack = document.getElementById('lq-track');
     var hqTrack = document.getElementById('hq-track');
-    lqTrack.currentTime += lqTrack.duration / 20;
-    hqTrack.currentTime += hqTrack.duration / 20;
+    lqTrack.currentTime +=  7.77;
+    hqTrack.currentTime +=  7.77;
 }
 function playBackward() {
     var lqTrack = document.getElementById('lq-track');
     var hqTrack = document.getElementById('hq-track');
-    lqTrack.currentTime -= lqTrack.duration / 20;
-    hqTrack.currentTime -= hqTrack.duration / 20;
+    lqTrack.currentTime -=  7.77;
+    hqTrack.currentTime -=  7.77;
 }
 function lqTrackEnded() {
     if ($('#lq-container').css('opacity') == '1') {
         var lqContainer = document.getElementById("lq-container");
-
+        lqContainer.classList.toggle("lq-filter");
         var hqContainer = document.getElementById("hq-container");
-        lqContainer.classList.toggle("toggle-filter");
-
         hqContainer.classList.toggle("inactive");
         $(".lq-toggle-play").toggle();
         $("#fetch-info").fadeIn("500");
@@ -115,4 +111,13 @@ function hqTrackEnded() {
         var hqContainer = document.getElementById("hq-container");
         hqContainer.classList.remove("active");
     }
+}
+function reSync() {
+    var lqTrack = document.getElementById('lq-track');
+    var hqTrack = document.getElementById('hq-track');
+    lqTrack.currentTime -= lqTrack.duration;
+    hqTrack.currentTime -= hqTrack.duration;
+    lqTrack.currentTime = hqTrack.currentTime;
+    hqTrack.currentTime = lqTrack.currentTime;
+    lqTrack.pause();hqTrack.pause();
 }

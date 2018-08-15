@@ -274,7 +274,7 @@ body {
   padding: 1vw;
 }
 .active-sidenav-menu {
-  background: #eeeeee;
+  background: #f5f6fa;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -298,13 +298,13 @@ body {
   padding: 1vw;
 }
 .sidenav-icons {
-  color: #777777;
+  color: #7f8c8d;
   font-size: 3vw;
   margin: 0.25vw auto;
   text-decoration: none;
 }
 .active-sidenav-icons {
-  color: #111111;
+  color: #000000;
   font-size: 4vw;
   margin: 0 auto;
   text-decoration: none;
@@ -314,7 +314,7 @@ body {
       -ms-flex-item-align: center;
               -ms-grid-row-align: center;
           align-self: center;
-  color: #777777;
+  color: #7f8c8d;
   font-family: TBR-700;
   font-size: 1vw;
   text-decoration: none;
@@ -324,13 +324,13 @@ body {
       -ms-flex-item-align: center;
               -ms-grid-row-align: center;
           align-self: center;
-  color: #111111;
+  color: #2f3640;
   font-family: TBR-900;
   font-size: 1vw;
   text-decoration: none;
 }
 .sidenav-menu:hover .sidenav-icons, .sidenav-menu:hover .sidenav-label {
-  color: #eeeeee;
+  color: #ecf0f1;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;

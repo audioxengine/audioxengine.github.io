@@ -105,12 +105,12 @@ background: #323232;
     transition: all 0.2s ease-in-out;
 }
 #lq-container:hover {
-    opacity: 1;
+    opacity: 0.99;
     -webkit-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     -moz-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
 }
-#lq-container.toggle-filter {
+#lq-container.lq-filter {
     opacity: 1;
     -webkit-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     -moz-box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
