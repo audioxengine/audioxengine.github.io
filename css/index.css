@@ -298,7 +298,7 @@ body {
   padding: 1vw;
 }
 .sidenav-icons {
-  color: #7f8c8d;
+  color: #5c5c5d;
   font-size: 3vw;
   margin: 0.25vw auto;
   text-decoration: none;
@@ -314,7 +314,7 @@ body {
       -ms-flex-item-align: center;
               -ms-grid-row-align: center;
           align-self: center;
-  color: #7f8c8d;
+  color: #5c5c5d;
   font-family: TBR-700;
   font-size: 1vw;
   text-decoration: none;
