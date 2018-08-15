@@ -353,7 +353,7 @@ box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
     justify-content: space-between;
     align-items: stretch;
 }
-#custom-mediaelement-rewind, #custom-mediaelement-fastforward {
+#custom-mediaelement-rewind, #custom-mediaelement-forward {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,7 +374,7 @@ box-shadow: 0vw 0.1735vw 0.1735vw 0.1735vw #171717;
 #custom-mediaelement-rewind i:active{
     transform: translateX(-5px);
 }
-#custom-mediaelement-fastforward i:active{
+#custom-mediaelement-forward i:active{
     transform: translateX(5px);
 }
 #track-license-info {
