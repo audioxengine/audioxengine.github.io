@@ -1,0 +1,178 @@
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+
+      #header-logo {
+        margin: 10px 0 0 17.5px;
+      }
+      #search-box input[type="text"] {
+        border: 1px solid #101010;
+        font-size: 1.5vw;
+        padding: 5px;
+        width: 100%;
+      }
+      #search-button {
+        border: 2.5px solid #333333;
+        -webkit-border-radius: 2.5px;
+           -moz-border-radius: 2.5px;
+                border-radius: 2.5px;
+        font-size: 1.5vw;
+        width: 50px;
+      }
+      #version-box {
+        -webkit-border-radius: 2.5px;
+           -moz-border-radius: 2.5px;
+                border-radius: 2.5px;
+        margin: 5px 0;
+      }
+      #version-id {
+        font-size: 1.75vw;
+        padding: 2.5px 0;
+      }
+      #version-info {
+        -webkit-border-radius: 2.5px;
+           -moz-border-radius: 2.5px;
+                border-radius: 2.5px;
+        font-size: 1.25vw;
+        padding: 5px;
+        left: -4vw;
+        width: 240px;
+      }
+      #version-info::after {
+        border-width: 2.5px;
+        margin-left: -2.5px;
+      }
+      .header-base {
+        height: 7.5px;
+        z-index: -1;
+      }
+      .footer-base {
+        height: 7.5px;
+      }
+      #left-container {
+        width: 10%;
+      }
+      #sidenav-container {
+        height: 100%;
+        padding: 5px 0;
+      }
+      .sidenav-menu {
+        margin: 5px 0;
+        padding: 10px;
+      }
+      .active-sidenav-menu {
+        margin: 5px 0;
+        padding: 10px;
+      }
+      .sidenav-icons {
+        font-size: 3.5vw;
+        margin: 2.5px auto;
+      }
+      .active-sidenav-icons {
+        font-size: 5vw;
+      }
+      .sidenav-label {
+        font-size: 1.25vw;
+      }
+      .active-sidenav-label {
+        font-size: 1.25vw;
+      }
+      #center-container {
+        width: 90%;
+      }
+      #right-container {
+        display: none;
+      }
+      .left-footer {
+        width: 10%;
+      }
+      #left-footer-top {
+        height: 97.5px;
+      }
+      #left-footer-bot {
+        height: 97.5px;
+      }
+      #lfooter-logo {
+        font-size: 7vw;
+      }
+      .center-footer {
+        width: 65%;
+      }
+      #cfooter-toplayer {
+        height: 97.5px;
+      }
+      #cfooter-botlayer {
+        height: 97.5px;
+      }
+      #audacity-art {
+        left: 7.5px;
+        top: 22.5px;
+        width: 160px;
+      }
+      #boosted-tracks {
+        bottom: 5px;
+        font-size: 17.5px;
+        left: 65px;
+      }
+      #copyright-symbol {
+        font-size: 27.5px;
+        left: 40px;
+        top: -2.5px;
+      }
+      #cfbot-center {
+        margin: 10px 10px 10px 20px;
+      }
+      .footer-links {
+        font-size: 12.5px;
+        right: 205px;
+      }
+      .footer-links:hover {
+        font-size: 13px;
+      }
+      #footer-about {
+        top: 5px;
+      }
+      #footer-contact {
+        top: 25px;
+      }
+      #footer-contribute {
+        top: 45px;
+      }
+      #tbr-footer {
+        left: 60px;
+        opacity: 0.75;
+        top: 10px;
+        width: 160px;
+      }
+      #footer-copyright {
+        font-size: 10px;
+        left: 60px;
+        top: 40px;
+      }
+      #created-with {
+        font-size: 17.5px;
+        right: 7.5px;
+        top: 20px;
+      }
+      #vscode-logo {
+        bottom: 10px;
+        right: 7.5px;
+        width: 160px;
+      }
+      .right-footer {
+        width: 25%;
+      }
+      #right-footer-top {
+        height: 97.5px;
+      }
+      #right-footer-bot {
+        height: 97.5px;
+      }
+      #hosted-on {
+        font-size: 2.5vw;
+        left: 1vw;
+        top: 1vw;
+      }
+      #github-logo {
+        bottom: 1vw;
+        left: 1vw;
+        width: 18vw;
+  }}

@@ -8,7 +8,8 @@ body {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fefefe;
+  background: linear-gradient(to bottom, #fdfdfd 0%, #ffffff 100%),
+  radial-gradient(at top center, #fdfdfd 0%, #fdfdfd 120%)#ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -26,9 +27,8 @@ body {
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 1vw;
   width: 100%;
-  background: linear-gradient(to bottom, #fdfdfd 0%, #ffffff 100%),
-  radial-gradient(at top center, #fdfdfd 0%, #fdfdfd 120%)#ffffff;
 }
 #header-logo {
   margin-left: 1.75vw;
@@ -60,7 +60,24 @@ body {
        animation-iteration-count: infinite;
 }
 #rightheader-box {
-  margin: 1vw 1.75vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1.75vw;
   width: 24vw;
 }
 #search-box {
@@ -323,7 +340,7 @@ body {
 }
 .active-sidenav-icons {
   color: #000000;
-  font-size: 4vw;
+  font-size: 5vw;
   margin: 0 auto;
   text-decoration: none;
 }
