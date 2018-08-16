@@ -81,6 +81,8 @@ function downBackward() {
     var lqTrack = document.getElementById('lq-track'); var hqTrack = document.getElementById('hq-track');
     interval = setInterval(function () { lqTrack.currentTime -= 5; hqTrack.currentTime -= 5; }, 200);
     lqTrack.pause(); hqTrack.pause();
+    var lqAlbumIcon = document.getElementById("lq-cover-icon");
+    lqAlbumIcon.classList.remove("active");
 }
 function upBackward1() {
     if ($('#hq-container').hasClass('active')) {
@@ -89,6 +91,8 @@ function upBackward1() {
         var hqTrack = document.getElementById('hq-track');
         lqTrack.currentTime -= 5; hqTrack.currentTime -= 5;
         lqTrack.play(); hqTrack.play(); lqTrack.muted = true; hqTrack.muted = false;
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.add("active");
     }
 }
 function upBackward2() {
@@ -111,6 +115,8 @@ function downForward() {
     var lqTrack = document.getElementById('lq-track'); var hqTrack = document.getElementById('hq-track');
     interval = setInterval(function interval() { lqTrack.currentTime += 5; hqTrack.currentTime += 5; }, 200);
     lqTrack.pause(); hqTrack.pause();
+    var lqAlbumIcon = document.getElementById("lq-cover-icon");
+    lqAlbumIcon.classList.remove("active");
 }
 function upForward1() {
     if ($('#hq-container').hasClass('active')) {
@@ -119,6 +125,8 @@ function upForward1() {
         var hqTrack = document.getElementById('hq-track');
         lqTrack.currentTime += 5; hqTrack.currentTime += 5;
         lqTrack.play(); hqTrack.play(); lqTrack.muted = true; hqTrack.muted = false;
+        var lqAlbumIcon = document.getElementById("lq-cover-icon");
+        lqAlbumIcon.classList.add("active");
     }
 }
 function upForward2() {
