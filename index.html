@@ -26,13 +26,15 @@
       <img src="assets/logos/tbr-logo.png" alt="tbr-logo.png" id="tbr-header">
     </a>
     <div id="rightheader-box">
-      <div id="search-box" onclick="versionVsbltyH()">
-        <input type="text" placeholder="Search">
-        <button type="submit">
+      <div id="search-box"  onclick="versionBoxHide()">
+        <form>
+            <input type="text" id="trackboostrsearch" placeholder="Search"  value="">
+        </form>
+        <div id="search-button" onclick="submitSearch()">
           <i class="fas fa-search"></i>
-        </button>
+        </div>
       </div>
-      <div id="version-box" onclick="versionVsbltyT();versionUpdate()">
+      <div id="version-box" onclick="versioBoxToggle();versionUpdate()">
         <div id="version-id">
           <b>Hey Vin, What's New ?!</b>
           <span id="version-info">
@@ -212,7 +214,7 @@
           </span>
         </div>
       </div>
-      <a href="#" id="more-totm">M O R E</a>
+      <a href="https://trackboostr.github.io/tracks/tracksofthemonth" id="more-totm">M O R E</a>
       <!-- === === === === === === === === TRACKBOOSTR MAIN END === === === === === === === === -->
 
     </div>

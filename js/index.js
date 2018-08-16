@@ -1,6 +1,12 @@
 //JS for Version BOx
-function versionVsbltyT(){var versionInfo=document.getElementById("version-info");"visible"===versionInfo.style.visibility?versionInfo.style.visibility="hidden":versionInfo.style.visibility="visible"}function versionVsbltyH(){var versionInfo=document.getElementById("version-info");versionInfo.style.visibility,i.style.visibility=""}
-
+function versioBoxToggle() {
+  var versionInfo = document.getElementById("version-info");
+  "visible" === versionInfo.style.visibility ? versionInfo.style.visibility = "hidden" : versionInfo.style.visibility = "visible"
+}
+function versionBoxHide() {
+  var versionInfo = document.getElementById("version-info");
+  versionInfo.style.visibility = "hidden"
+}
 function versionUpdate(){
   document.getElementById("version-update-value").textContent="Update Version 1.1";
   document.getElementById("update-span-1").textContent="Welcome! As you can see, TrackBoostR is still under development. Stay tuned as we grow and feel free to reach me using the Contact Tab. Cheers!";
@@ -15,3 +21,9 @@ function versionUpdate(){
   document.getElementById("update-span-9").textContent="";
   document.getElementById("update-span-10").textContent="";
 };
+
+//JS Search Box
+function submitSearch() {
+  document.location.href = '/archive/#' + document.getElementById('trackboostrsearch').value;
+  return false;
+}
